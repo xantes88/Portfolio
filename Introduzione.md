@@ -1,6 +1,6 @@
-Introduzione
+Ciao! 
 
-Ciao! Sono Federico Petillo, un professionista appassionato di Data Science, Machine Learning e Intelligenza Artificiale con una forte esperienza in analisi dei dati, modelli predittivi, e vision artificiale, con una solida formazione in Economia e Finanza e un Master in AI Engineering.
+Sono Federico Petillo, un professionista appassionato di Data Science, Machine Learning e Intelligenza Artificiale con una forte esperienza in analisi dei dati, modelli predittivi, e vision artificiale, con una solida formazione in Economia e Finanza e un Master in AI Engineering.
 
 Nel corso della mia carriera, ho avuto l'opportunità di collaborare con aziende di grande rilievo, come DXC Technology, dove ho gestito progetti di miglioramento dei processi utilizzando le tecnologie più avanzate, da SAP alla gestione delle risorse tramite AI. Il mio obiettivo professionale è continuare a crescercome esperto in Data Science, lavorando su progetti ad alto impatto che sfruttano machine learning e deep learning per risolvere problemi concreti.
 
