@@ -1,178 +1,202 @@
-# Image Classification Project with Synthetic Data Augmentation
+Image Classification Project with Synthetic Data Augmentation
+Table of Contents
+Introduction
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Problem Statement](#problem-statement)
-- [Dataset Description](#dataset-description)
-- [Synthetic Image Generation and Dataset Augmentation](#synthetic-image-generation-and-dataset-augmentation)
-- [Methodology](#methodology)
-- [Solution Overview](#solution-overview)
-- [Model Architecture](#model-architecture)
-- [Training Procedure](#training-procedure)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Results and Analysis](#results-and-analysis)
-- [How to Use](#how-to-use)
-- [Dependencies](#dependencies)
+Problem Statement
 
+Dataset Description
 
----
+Synthetic Image Generation and Dataset Augmentation
 
-## Introduction
+Methodology
 
-Image classification is a core task in computer vision where an algorithm assigns labels to images based on their visual content. It has applications across numerous domains, including medical imaging, autonomous driving, retail, and security. However, real-world datasets often suffer from **class imbalance** and **limited samples**, which degrade model performance, especially on minority classes.
+Model Architecture
 
-This project focuses on addressing these challenges by leveraging **synthetic data augmentation** through AI-generated images. By augmenting the dataset with realistic synthetic samples, the model learns more generalized and discriminative features, leading to improved classification accuracy and robustness.
+Training Procedure
 
----
+Evaluation Metrics
 
-## Problem Statement
+Results and Analysis
 
-The main challenges addressed in this project are:
+How to Use
 
-- **Class imbalance:** Some classes have significantly fewer samples, making it difficult for the model to learn representative features.
-- **Limited dataset size:** A small number of training images limits the ability to train deep learning models effectively.
-- **Generalization:** Models trained on imbalanced or small datasets tend to overfit majority classes, resulting in poor generalization on unseen data.
-  
-The goal is to improve classification accuracy across all 37 classes by:
+Dependencies
 
-- Generating synthetic images for underrepresented classes.
-- Creating an augmented dataset combining original and synthetic images.
-- Training and evaluating CNN classifiers on both original and augmented datasets to quantify performance improvements.
+Introduction
+In real-world image classification tasks, datasets often suffer from class imbalance and limited sample sizes, leading to biased models that perform poorly on minority classes. This project addresses these challenges by leveraging synthetic data augmentation to balance class distributions and enrich the training data. By generating AI-synthesized images, this project demonstrates how synthetic data can improve model robustness and classification performance across all classes.
 
----
+Problem Statement
+The project targets the following challenges:
 
-## Dataset Description
+Class imbalance: Some classes are underrepresented, making it difficult for the model to learn distinguishing features.
 
-The dataset consists of approximately 1,100 images categorized into 37 classes. Each class corresponds to a distinct label relevant to the classification task. Key characteristics include:
+Limited data size: Small datasets limit the ability to train deep learning models effectively, causing overfitting.
 
-- **Class distribution:** Highly imbalanced, with some classes containing fewer than 25 images and others exceeding 40.
-- **Variability:** Images vary in background, lighting conditions, and object orientation, posing a challenge for robust classification.
-- **Splitting:** Dataset split into training, validation, and test sets to ensure reliable performance evaluation.
+Generalization issues: Models trained on imbalanced or small datasets tend to overfit, resulting in poor performance on unseen data.
 
----
+The goal of this project is to:
 
-## Synthetic Image Generation and Dataset Augmentation
+Generate synthetic images for underrepresented classes.
 
-To address the imbalance and limited data, synthetic images were generated using advanced generative models (e.g., GANs or diffusion models). These images:
+Create an augmented dataset by combining original and synthetic images.
 
-- Mimic the visual style and key features of their respective classes.
-- Increase the number of samples in minority classes to improve class balance.
-- Enhance intra-class variability, aiding the model's generalization capabilities.
+Evaluate model performance on both original and augmented datasets to assess the impact of synthetic data.
 
-The augmented dataset is a union of original and synthetic images, significantly increasing the total number of training samples and providing a more uniform class distribution.
+Dataset Description
+The dataset used for this project consists of approximately 1,100 images across 37 classes. Each class represents a distinct label relevant to the classification task. The key characteristics of the dataset include:
 
----
+Class distribution: The dataset is highly imbalanced, with some classes containing fewer than 25 images and others exceeding 40 images.
 
-## Methodology
+Image variability: The images show varying backgrounds, lighting conditions, and object orientations, which makes the classification task more challenging.
 
-The project methodology follows these steps:
+Splitting: The dataset is divided into training, validation, and test sets to ensure reliable performance evaluation.
 
-1. **Data preprocessing:**
-   - Images were resized and normalized.
-   - Data was split into training, validation, and test sets maintaining class distribution.
+Synthetic Image Generation and Dataset Augmentation
+To address the data limitations, synthetic images were generated using generative models such as GANs or diffusion models. These synthetic images:
 
-2. **Synthetic image generation:**
-   - Generative models were trained or utilized to produce synthetic images.
-   - Synthetic images were quality-checked to ensure class relevance and realism.
+Mimic the visual style and key features of the original images.
 
-3. **Dataset augmentation:**
-   - Synthetic images were combined with original images to form the augmented training dataset.
+Increase the number of samples in minority classes to enhance class balance.
 
-4. **Model training:**
-   - Two CNN models were trained independently:
-     - One on the original dataset.
-     - One on the augmented dataset.
-   - Consistent hyperparameters and training protocols were applied to ensure fair comparison.
+Improve intra-class variability, aiding the model's ability to generalize.
 
-5. **Model evaluation:**
-   - Performance was assessed using accuracy, precision, recall, and F1-score metrics.
-   - Detailed per-class analysis was conducted to evaluate improvements, especially in minority classes.
+The augmented dataset combines the original images with the synthetic ones, providing a more balanced class distribution and a larger dataset for training.
 
----
+Methodology
+The project follows these key steps:
 
-## Solution Overview
+Data Preprocessing:
 
-The approach integrates synthetic data augmentation with deep learning-based image classification to improve model robustness on an imbalanced multi-class dataset. The use of generative AI techniques provides a scalable way to enrich training data and reduce bias introduced by uneven class representation.
+Images were resized and normalized for input into the model.
 
----
+The data was split into training, validation, and test sets, ensuring each set preserves the class distribution.
 
-## Model Architecture
+Synthetic Image Generation:
 
-A Convolutional Neural Network (CNN) was employed featuring:
+Generative models were employed to produce synthetic images for underrepresented classes.
 
-- Multiple convolutional layers with ReLU activation to extract hierarchical features.
-- Max-pooling layers for spatial dimensionality reduction.
-- Dropout layers to reduce overfitting.
-- Fully connected layers leading to a softmax output layer for 37-class classification.
+The synthetic images were validated for realism and relevance to the target classes.
 
-This architecture balances model complexity and computational efficiency, suitable for the dataset size and classification task.
+Dataset Augmentation:
 
----
+The synthetic images were merged with the original dataset, creating an augmented training dataset.
 
-## Training Procedure
+Model Training:
 
-- **Optimizer:** Adam optimizer with a learning rate tuned for stable convergence.
-- **Batch size:** Fixed across experiments to ensure consistency.
-- **Epochs:** Early stopping based on validation loss to avoid overfitting.
-- **Loss function:** Categorical cross-entropy suitable for multi-class classification.
+A CNN model was trained on both the original dataset and the augmented dataset.
 
----
+Training protocols and hyperparameters were kept consistent across experiments for fair comparison.
 
-## Evaluation Metrics
+Model Evaluation:
 
-- **Accuracy:** Overall percentage of correct predictions.
-- **Precision:** Measures exactness — the proportion of true positives among predicted positives.
-- **Recall:** Measures completeness — the proportion of true positives detected among all actual positives.
-- **F1-score:** Harmonic mean of precision and recall, providing a balanced measure.
+Model performance was evaluated using accuracy, precision, recall, and F1-score metrics.
 
-Metrics were computed both per class and as macro and weighted averages to understand performance distribution.
+A detailed analysis of per-class performance was conducted to measure improvements, especially for minority classes.
 
----
+Solution Overview
+The approach integrates synthetic data augmentation with deep learning-based image classification to improve the robustness of models trained on imbalanced datasets. By leveraging AI-generated images, the model benefits from a larger, more balanced dataset, reducing the bias towards majority classes and enhancing generalization across all categories.
 
-## Results and Analysis
+Model Architecture
+A Convolutional Neural Network (CNN) architecture was used for classification, consisting of the following layers:
 
-### Performance on Augmented Dataset
+Convolutional layers (with ReLU activation) to extract hierarchical features from the images.
 
-- **Test Accuracy:** 72.55%
-- **Macro Precision:** 75.89%
-- **Macro Recall:** 72.02%
-- **Macro F1-Score:** 71.86%
+Max-pooling layers for dimensionality reduction.
 
-The inclusion of synthetic images notably improved model performance. Minority classes benefited the most, as the augmented data provided more representative samples, allowing the model to learn better features and reduce bias towards majority classes.
+Dropout layers to prevent overfitting during training.
 
-### Performance on Original Dataset
+Fully connected layers with a softmax output layer for multi-class classification (37 classes).
 
-- **Test Accuracy:** 62.28%
-- **Macro Precision:** 69.64%
-- **Macro Recall:** 63.48%
-- **Macro F1-Score:** 63.09%
+The architecture balances model complexity and computational efficiency, suitable for the task and dataset size.
 
-Lower scores reflect the difficulty imposed by the original class imbalance and limited samples, resulting in weaker generalization and poorer performance on minority classes.
+Training Procedure
+Optimizer: Adam optimizer, with a learning rate that promotes stable convergence.
 
-### Detailed Interpretation
+Batch size: Consistent across experiments for fairness.
 
-- **Improved recall on minority classes:** Synthetic augmentation helped the model detect more true positives in underrepresented classes.
-- **Balanced precision:** The model made fewer false positive errors across classes.
-- **Overall robustness:** The model trained on augmented data is more stable and less prone to overfitting majority classes.
+Epochs: Early stopping based on validation loss to prevent overfitting.
 
-These results highlight the effectiveness of synthetic data augmentation for imbalanced image classification problems.
+Loss function: Categorical cross-entropy loss, which is ideal for multi-class classification problems.
 
----
+Evaluation Metrics
+Performance was evaluated using several key metrics:
 
-## How to Use
+Accuracy: The percentage of correct predictions out of all predictions.
 
-- Original and synthetic datasets are provided in structured folders.
-- Users can train their own models or fine-tune the provided CNN architecture on either dataset.
-- Evaluation scripts can be adapted to generate performance metrics on custom splits.
+Precision: The proportion of true positives among predicted positives.
 
----
+Recall: The proportion of true positives among all actual positives.
 
-## Dependencies
+F1-score: The harmonic mean of precision and recall, providing a balanced metric.
 
-- Python 3.8+
-- PyTorch or TensorFlow
-- scikit-learn
-- numpy
-- matplotlib (optional)
-- pandas (optional)
+Metrics were calculated for each class and averaged using both macro and weighted approaches to assess overall performance.
 
+Results and Analysis
+Performance on Augmented Dataset
+Test Accuracy: 72.55%
+
+Macro Precision: 75.89%
+
+Macro Recall: 72.02%
+
+Macro F1-Score: 71.86%
+
+The inclusion of synthetic images improved model performance across the board, with the largest gains observed in minority classes. The augmented data allowed the model to learn more diverse features, leading to better classification accuracy.
+
+Performance on Original Dataset
+Test Accuracy: 62.28%
+
+Macro Precision: 69.64%
+
+Macro Recall: 63.48%
+
+Macro F1-Score: 63.09%
+
+Without synthetic augmentation, the model struggled with minority classes due to class imbalance, resulting in lower performance metrics.
+
+Detailed Interpretation
+Improved recall for minority classes: Synthetic data augmentation significantly improved recall for underrepresented classes, allowing the model to identify more true positives.
+
+Balanced precision: The model made fewer false-positive errors across all classes.
+
+Enhanced robustness: The model trained on the augmented dataset exhibited more stability and better generalization, making it less prone to overfitting.
+
+These findings demonstrate the effectiveness of synthetic data augmentation for imbalanced image classification tasks.
+
+How to Use
+Install dependencies: Ensure you have Python 3.8+ and the following libraries installed:
+
+PyTorch
+
+scikit-learn
+
+numpy
+
+matplotlib (optional for visualization)
+
+pandas (optional for data handling)
+
+Run the training script: The provided Python script includes everything needed to train the model:
+
+Load the dataset.
+
+Generate synthetic images.
+
+Train the CNN model on both the original and augmented datasets.
+
+Evaluate the model's performance.
+
+Generate your own synthetic data: Modify the image generation function to suit your dataset or use a pre-trained generative model.
+
+Dependencies
+Python 3.8+
+
+PyTorch or TensorFlow
+
+scikit-learn
+
+numpy
+
+matplotlib (optional)
+
+pandas (optional)
