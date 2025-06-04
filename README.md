@@ -14,7 +14,6 @@ Computer Vision
 
 Intelligenza Artificiale (AI)
 
-Big Data Analysis
 
 Generative Ai
 
