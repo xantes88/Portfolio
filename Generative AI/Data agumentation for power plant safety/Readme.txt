@@ -1,202 +1,81 @@
-Image Classification Project with Synthetic Data Augmentation
-Table of Contents
-Introduction
+⚡ Data Augmentation for Power Plant Security using Image Captioning & Stable Diffusion
+This project explores the application of advanced data augmentation techniques using image captioning (BLIP) and image generation (Stable Diffusion 2.1) to improve classification accuracy in scenarios involving critical infrastructure security, such as power plants.
 
-Problem Statement
+🔍 Objective
+To enhance the model's ability to accurately classify different categories (e.g., pet breeds as a proxy dataset) by generating high-quality synthetic images and captions — simulating edge-case scenarios relevant to security in power systems.
 
-Dataset Description
+🧠 Key Technologies
+Image Captioning: BLIP for extracting contextual captions from images.
 
-Synthetic Image Generation and Dataset Augmentation
+Text Generation: GPT-2 for refining and expanding image captions.
 
-Methodology
+Image Generation: Stable Diffusion 2.1 for generating new synthetic images based on descriptive prompts.
 
-Model Architecture
+Model Training: Fine-tuned ResNet50 for multi-class image classification.
 
-Training Procedure
+Evaluation: Precision, recall, F1-score, confusion matrix, and test accuracy.
 
-Evaluation Metrics
+📊 Results
+Dataset Version	Test Accuracy	Macro F1 Score
+Original Dataset	62.28%	0.631
+With Augmented Images	72.55%	0.719
 
-Results and Analysis
+📈 +10.27% accuracy improvement using synthetic images
 
-How to Use
+🔄 Boosted performance on under-represented categories
 
-Dependencies
+🧪 Enhanced generalization to unseen data
 
-Introduction
-In real-world image classification tasks, datasets often suffer from class imbalance and limited sample sizes, leading to biased models that perform poorly on minority classes. This project addresses these challenges by leveraging synthetic data augmentation to balance class distributions and enrich the training data. By generating AI-synthesized images, this project demonstrates how synthetic data can improve model robustness and classification performance across all classes.
+🛠️ How It Works
+Caption Extraction: Contextual captions are generated from real images using BLIP.
 
-Problem Statement
-The project targets the following challenges:
+Prompt Enrichment: Captions are semantically expanded using GPT-2.
 
-Class imbalance: Some classes are underrepresented, making it difficult for the model to learn distinguishing features.
+Image Generation: Stable Diffusion generates new, high-quality images from refined prompts.
 
-Limited data size: Small datasets limit the ability to train deep learning models effectively, causing overfitting.
+Data Integration: Synthetic images and captions are merged into the original dataset.
 
-Generalization issues: Models trained on imbalanced or small datasets tend to overfit, resulting in poor performance on unseen data.
+Training & Evaluation: A ResNet50 classifier is trained and evaluated on the enriched dataset.
 
-The goal of this project is to:
+✅ Business Value
+Reduced Labeling Costs: This technique can reduce reliance on manual annotation by synthesizing labeled data at scale.
 
-Generate synthetic images for underrepresented classes.
+Improved Model Robustness: Demonstrates how synthetic data can mitigate class imbalance and improve generalization — essential in real-world, high-risk environments like energy or defense.
 
-Create an augmented dataset by combining original and synthetic images.
+Scalable & Repeatable: The architecture supports retraining with new classes, making it adaptable for new threat types, equipment anomalies, or surveillance contexts.
 
-Evaluate model performance on both original and augmented datasets to assess the impact of synthetic data.
+Real-World Analog: While trained on the Oxford-IIIT Pet dataset, this approach is directly transferable to domains like security camera feeds, drone imagery, and industrial inspections.
 
-Dataset Description
-The dataset used for this project consists of approximately 1,100 images across 37 classes. Each class represents a distinct label relevant to the classification task. The key characteristics of the dataset include:
+🔄 Potential Improvements
+Domain-Specific Dataset: Replace pet images with actual security footage or power infrastructure datasets.
 
-Class distribution: The dataset is highly imbalanced, with some classes containing fewer than 25 images and others exceeding 40 images.
+Human-in-the-loop Feedback: Introduce manual validation to ensure synthetic data quality.
 
-Image variability: The images show varying backgrounds, lighting conditions, and object orientations, which makes the classification task more challenging.
+Multimodal Risk Assessment: Extend the pipeline with text-to-text reasoning or audio-video inputs.
 
-Splitting: The dataset is divided into training, validation, and test sets to ensure reliable performance evaluation.
+Model Monitoring: Integrate explainability tools (e.g., Grad-CAM) to monitor and debug decisions made by the trained model.
 
-Synthetic Image Generation and Dataset Augmentation
-To address the data limitations, synthetic images were generated using generative models such as GANs or diffusion models. These synthetic images:
+Edge Deployment: Optimize the model for real-time inference on edge devices used in industrial sites.
 
-Mimic the visual style and key features of the original images.
+📁 Repository Structure
 
-Increase the number of samples in minority classes to enhance class balance.
+├── data/
+│   └── original_images/
+│   └── generated_images/
+├── notebooks/
+│   └── data_augmentation.ipynb
+├── models/
+│   └── resnet50_trained.pth
+├── utils/
+│   └── image_captioning.py
+├── captions_dataset_blip.json
+├── augmented_captions_dataset.json
+└── README.md
+💬 Why This Project Matters
+This project demonstrates a full-stack machine learning pipeline from raw data ingestion to performance uplift via synthetic augmentation. It showcases:
 
-Improve intra-class variability, aiding the model's ability to generalize.
+🔍 Smart use of transformers and generative AI to solve data scarcity.
 
-The augmented dataset combines the original images with the synthetic ones, providing a more balanced class distribution and a larger dataset for training.
+🎯 Real-world potential in security, infrastructure, and automation domains.
 
-Methodology
-The project follows these key steps:
-
-Data Preprocessing:
-
-Images were resized and normalized for input into the model.
-
-The data was split into training, validation, and test sets, ensuring each set preserves the class distribution.
-
-Synthetic Image Generation:
-
-Generative models were employed to produce synthetic images for underrepresented classes.
-
-The synthetic images were validated for realism and relevance to the target classes.
-
-Dataset Augmentation:
-
-The synthetic images were merged with the original dataset, creating an augmented training dataset.
-
-Model Training:
-
-A CNN model was trained on both the original dataset and the augmented dataset.
-
-Training protocols and hyperparameters were kept consistent across experiments for fair comparison.
-
-Model Evaluation:
-
-Model performance was evaluated using accuracy, precision, recall, and F1-score metrics.
-
-A detailed analysis of per-class performance was conducted to measure improvements, especially for minority classes.
-
-Solution Overview
-The approach integrates synthetic data augmentation with deep learning-based image classification to improve the robustness of models trained on imbalanced datasets. By leveraging AI-generated images, the model benefits from a larger, more balanced dataset, reducing the bias towards majority classes and enhancing generalization across all categories.
-
-Model Architecture
-A Convolutional Neural Network (CNN) architecture was used for classification, consisting of the following layers:
-
-Convolutional layers (with ReLU activation) to extract hierarchical features from the images.
-
-Max-pooling layers for dimensionality reduction.
-
-Dropout layers to prevent overfitting during training.
-
-Fully connected layers with a softmax output layer for multi-class classification (37 classes).
-
-The architecture balances model complexity and computational efficiency, suitable for the task and dataset size.
-
-Training Procedure
-Optimizer: Adam optimizer, with a learning rate that promotes stable convergence.
-
-Batch size: Consistent across experiments for fairness.
-
-Epochs: Early stopping based on validation loss to prevent overfitting.
-
-Loss function: Categorical cross-entropy loss, which is ideal for multi-class classification problems.
-
-Evaluation Metrics
-Performance was evaluated using several key metrics:
-
-Accuracy: The percentage of correct predictions out of all predictions.
-
-Precision: The proportion of true positives among predicted positives.
-
-Recall: The proportion of true positives among all actual positives.
-
-F1-score: The harmonic mean of precision and recall, providing a balanced metric.
-
-Metrics were calculated for each class and averaged using both macro and weighted approaches to assess overall performance.
-
-Results and Analysis
-Performance on Augmented Dataset
-Test Accuracy: 72.55%
-
-Macro Precision: 75.89%
-
-Macro Recall: 72.02%
-
-Macro F1-Score: 71.86%
-
-The inclusion of synthetic images improved model performance across the board, with the largest gains observed in minority classes. The augmented data allowed the model to learn more diverse features, leading to better classification accuracy.
-
-Performance on Original Dataset
-Test Accuracy: 62.28%
-
-Macro Precision: 69.64%
-
-Macro Recall: 63.48%
-
-Macro F1-Score: 63.09%
-
-Without synthetic augmentation, the model struggled with minority classes due to class imbalance, resulting in lower performance metrics.
-
-Detailed Interpretation
-Improved recall for minority classes: Synthetic data augmentation significantly improved recall for underrepresented classes, allowing the model to identify more true positives.
-
-Balanced precision: The model made fewer false-positive errors across all classes.
-
-Enhanced robustness: The model trained on the augmented dataset exhibited more stability and better generalization, making it less prone to overfitting.
-
-These findings demonstrate the effectiveness of synthetic data augmentation for imbalanced image classification tasks.
-
-How to Use
-Install dependencies: Ensure you have Python 3.8+ and the following libraries installed:
-
-PyTorch
-
-scikit-learn
-
-numpy
-
-matplotlib (optional for visualization)
-
-pandas (optional for data handling)
-
-Run the training script: The provided Python script includes everything needed to train the model:
-
-Load the dataset.
-
-Generate synthetic images.
-
-Train the CNN model on both the original and augmented datasets.
-
-Evaluate the model's performance.
-
-Generate your own synthetic data: Modify the image generation function to suit your dataset or use a pre-trained generative model.
-
-Dependencies
-Python 3.8+
-
-PyTorch or TensorFlow
-
-scikit-learn
-
-numpy
-
-matplotlib (optional)
-
-pandas (optional)
+🛠️ Competence in vision-language integration, data engineering, and MLOps readiness.
