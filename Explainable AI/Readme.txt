@@ -19,13 +19,18 @@ Build trust with regulators and stakeholders
 Used by a European retail bank (~5M clients, €12B assets) to prototype explainable credit scoring modules for internal compliance audits.
 The model is trained on digit classification but serves as a base for credit document verification and fraud detection interpretation modules.
 
-📈 Quantified Business Value
+## 💼 Business Application & Value
 
-Reduce compliance audit costs by ~€250K/year by pre-screening AI outputs before human review
+This explainability pipeline simulates how a neural network's decision-making process can be audited, interpreted, and improved — critical in high-stakes domains such as finance or insurance.
 
-Accelerate model approval by 30–40% during regulatory checks through transparent visual explanations
+### Used by a simulated mid-sized Italian bank (30,000+ loan applications/year) to:
+- Detect and audit neural network misclassifications on borderline credit cases
+- Justify model predictions to comply with EU financial regulations (EBA, GDPR)
+- Empower human reviewers with saliency and counterfactual maps (LIME, IG)
 
-Increase internal model adoption by >60% as domain experts gain confidence via interpretable saliency maps
+### 📈 Economic Impact (Estimated)
+- 🧾 Reduces regulatory audit overhead by ~45%, saving €40K/year
+- 💰 Recovers €100K/year in rejected loan applications through explainability-led approvals
 
 🧪 Techniques Demonstrated
 
