@@ -1,13 +1,17 @@
-👤 Federico Petillo — From Finance Ops to AI-Driven Optimization
+👤 Federico Petillo — Turning Financial Operations into Intelligent Automation
 
-🧭 The Shift: From Financial Ops to Smart Automation
+🎯 From Accounts Payable to Applied AI
+After 5 years optimizing financial pipelines at DXC Technology and a Management degree from Bocconi, I witnessed how much time, money, and insight companies lose due to manual workflows, poor data visibility, and decision inertia.
 
-After 5 years in finance operations — leading AP, payroll, and vendor management at DXC Technology and other top-tier environments — I saw the same thing over and over:
-Repetitive work, costly delays, and systems that think as little as possible.
+So I pivoted — from repetitive execution to intelligent systems that act, learn, and explain.
 
-So I made a move.
+Now I build ML solutions that:
 
-With a Bocconi degree in Management and new training in AI Engineering & Data Science, I now design intelligent systems that don’t just report — they decide.
+Automate decisions
+
+Deliver tangible business value
+
+Earn stakeholder trust through explainability
 
 🚀 I Don’t Build Dashboards. I Build Outcomes.
 Every project in this portfolio tackles a real-world use case.
