@@ -26,14 +26,14 @@ Now I design Python- and SQL-based tools that:
 **🎯 Impact**: Prevents 3–5% misclassification in visual checks  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/classificazione%20frutti%20esotici)
 
-### 🧾 Python CRM System (CLI)  
-**📋 Use Case**: Replace Excel-based tracking in insurance SME  
-**⏱️ Time Saved**: 10+ hours/month  
-🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/progetto%20python)
-
-### 📘 C++ Contact Book (Offline Tool)  
+### 🧾 Python Contact Book (CLI)  
 **🚛 Use Case**: Local contact tracking for field logistics  
 **💡 Value**: Ensures robustness without cloud dependency  
+🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/progetto%20python)
+
+### 📘 C++ CRM system 
+**📋 Use Case**: Replace Excel-based tracking in insurance SME  
+**⏱️ Time Saved**: 10+ hours/month  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/progetto%20c%2B%2B)
 
 ### 🧪 Generative AI – Power Plant Fault Simulation  
