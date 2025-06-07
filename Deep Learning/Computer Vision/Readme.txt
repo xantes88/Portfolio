@@ -1,108 +1,135 @@
-# Fruit Classification with Machine Learning Models
+🌼 Flower Recognition with EfficientNet for AgriTech Applications
 
-## Project Description
+This project focuses on building a high-performance deep learning model capable of distinguishing between Daisy and Dandelion flowers using real-world image data. The goal is to enable scalable, automated image recognition for environmental monitoring, precision agriculture, and biodiversity tracking.
 
-This project implements an automated classification system for different types of fruits based on their physical measurements (weight, dimensions, sensory characteristics). It applies data preprocessing, balancing, hyperparameter optimization, and supervised learning models to achieve high predictive performance.
+🚀 Project Overview
 
----
+Use case: Flower species classification in natural environments
 
-## Dataset
+Model: Transfer learning with EfficientNet-B0
 
-The dataset contains 500 fruit samples with the following features:
+Data: Custom dataset with Daisy and Dandelion images
 
-- **Weight (g)**: Weight of the fruit in grams.
-- **Average Diameter (mm)**: Average diameter of the fruit.
-- **Average Length (mm)**: Average length of the fruit.
-- **Peel Hardness (1-10)**: Peel hardness rating.
-- **Sweetness (1-10)**: Sweetness rating.
-- **Fruit**: Fruit type (target variable).
+Key focus: Class imbalance handling, data augmentation, training optimization
 
-The dataset contains no missing values but includes some outliers which are removed using the Interquartile Range (IQR) method.
+Accuracy achieved: ~96% on test set
 
----
+🧠 Core Technologies
 
-## Techniques Implemented
+Component	Tool / Library
+Framework	PyTorch
+Model	EfficientNet-B0 (timm)
+Data Handling	torchvision, PIL, OpenCV
+Evaluation	sklearn, seaborn
+Augmentation	torchvision transforms
 
-### Preprocessing
-- Outlier removal via IQR method.
-- Target encoding using `LabelEncoder`.
-- Feature scaling with `StandardScaler`.
-- Dataset balancing using SMOTE with reduced neighbors (`k=1`) to prevent overfitting.
-- Class weight calculation to handle residual class imbalance during training.
+📁 Dataset Structure
 
-### Data Visualization
-- Histograms of numeric variable distributions.
-- Boxplots for outlier detection.
-- Scatter plots to examine relationships between physical features.
-- Correlation matrix heatmap to analyze feature dependencies.
+/progetto-finale-flowes/
+├── train/
+│   ├── daisy/
+│   └── dandelion/
+├── valid/
+├── test/
+Each class contains JPEG/PNG flower images
 
-### Machine Learning Models
-- K-Nearest Neighbors (KNN)
-- Random Forest
-- Support Vector Machine (SVM)
-- XGBoost (Gradient Boosting)
+Resolution: Most images are high quality (~512x512)
 
-Hyperparameters are optimized using `GridSearchCV` with `RepeatedStratifiedKFold` for robust cross-validation.
+Class imbalance observed: dandelion is overrepresented
 
-### Ensemble Learning
-- **Voting Classifier:** Combines KNN, Random Forest, SVM, and XGBoost using hard voting.
-- **Stacking Classifier:** Uses the same base models with Logistic Regression as the meta-model.
+🔍 Preprocessing & Augmentation
 
----
+Image Cleaning: Removed corrupted and low-quality images
 
-## Model Evaluation
+Resize: All images scaled to 224x224
 
-Metrics used include accuracy, precision, recall, and F1-score. Performance is analyzed via classification reports and confusion matrices.
+Normalization: Based on ImageNet stats
 
-### Sample Classification Reports
+Data Augmentation:
 
-**K-Nearest Neighbors (KNN)**
+Rotation, color jitter for Daisy
 
-| Class   | Precision | Recall | F1-score | Support |
-|---------|-----------|--------|----------|---------|
-| Arancia | 0.88      | 0.90   | 0.89     | 83      |
-| Banana  | 1.00      | 1.00   | 1.00     | 3       |
-| Kiwi    | 0.90      | 0.89   | 0.90     | 82      |
-| Mela    | 0.93      | 0.92   | 0.93     | 74      |
-| Uva     | 1.00      | 1.00   | 1.00     | 78      |
+No augmentation for Dandelion
 
-**Training Accuracy:** 93%
+Brightness & Resolution Checks:
 
-**Test Set Performance**
+Low-brightness images flagged
 
-| Class   | Precision | Recall | F1-score | Support |
-|---------|-----------|--------|----------|---------|
-| Arancia | 0.71      | 0.71   | 0.71     | 17      |
-| Banana  | 1.00      | 1.00   | 1.00     | 1       |
-| Kiwi    | 0.70      | 0.78   | 0.74     | 18      |
-| Mela    | 1.00      | 0.92   | 0.96     | 26      |
-| Uva     | 1.00      | 1.00   | 1.00     | 18      |
+Resolution < 128x128 marked for review
 
-**Test Accuracy:** 86%
+⚖️ Addressing Class Imbalance
 
-*(Similar detailed reports are available for Random Forest, SVM, XGBoost, Voting, and Stacking classifiers.)*
+Class	Sample Count	Strategy
+Daisy	Fewer	Augmentation, weighting
+Dandelion	More	Baseline normalization
 
----
+Used WeightedCrossEntropyLoss to emphasize underrepresented class
 
-## Final Considerations
+Created a balanced training set using Subset and ConcatDataset
 
-- Models demonstrate high precision and recall on the training set, indicating good learning ability.
-- Test results show slightly lower performance for some classes (e.g., Arancia, Kiwi), suggesting room for improvement in generalization.
-- Ensemble methods (Voting and Stacking) generally improve overall accuracy and robustness by leveraging strengths of individual classifiers.
-- Size-related features (weight, diameter, length) consistently emerge as the most important predictors.
-- SMOTE balancing with a low number of neighbors (k=1) effectively mitigates class imbalance without inducing overfitting.
-- Future work may include advanced feature engineering, testing additional classifiers, or employing deep learning techniques.
+🏗️ Model Architecture
 
----
+Backbone: EfficientNet-B0 (pretrained)
 
-## How to Use This Project
+Final Layer: Replaced classifier for 2-class output
 
-### Requirements
+Loss Function: Weighted CrossEntropyLoss
 
-- Python 3.7+
-- Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `xgboost`, `imbalanced-learn`
+Optimizer: Adam (lr=0.001)
 
-Install dependencies with:
+Early Stopping: Triggered after 5 stagnant epochs
 
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost imbalanced-learn
+Checkpoints: Saved best validation model (best_model.pth)
+
+📊 Performance Summary
+
+Metric	Value
+Validation Accuracy	~95%
+Test Accuracy	96%
+Daisy Precision	0.96
+Dandelion Precision	0.97
+Total Misclassifications	6
+
+Confusion matrix reveals most errors are from misclassifying Daisy as Dandelion – a sign of remaining class imbalance bias.
+
+🖼️ Visual Outputs
+
+📉 Training/validation loss & accuracy charts
+
+🧾 Classification report
+
+🔍 Confusion matrix heatmap
+
+🔍 Per-class count stats
+
+💡 Business Applications
+🌿 Environmental Monitoring: Detect floral species across regions
+
+🧑‍🌾 AgriTech: Automate flora recognition in precision farming
+
+🏞️ Biodiversity: Support ecological surveys with image-based classification
+
+🛰️ Remote Sensing: Integrate with drone imagery pipelines
+
+🛠️ Future Enhancements
+
+🧪 Add fine-tuning with learning rate schedulers
+
+🔁 Test ensemble models for robustness
+
+🧭 Expand dataset to include more flower types
+
+🧱 Add explainability (e.g., GradCAM)
+
+⚖️ Further reduce bias using SMOTE or GAN augmentation
+
+📌 Conclusion
+This project showcases a complete deep learning pipeline:
+
+Clean dataset ➝ Explore ➝ Augment ➝ Train ➝ Evaluate
+
+Tackles real-world data imbalance, preprocessing, and model optimization challenges
+
+Yields production-ready accuracy with EfficientNet's lightweight power
+
+Ideal for scaling into mobile, web, or cloud-based AgriTech solutions.
