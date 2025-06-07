@@ -20,6 +20,7 @@ No toy datasets. No academic fluff. Just business value, translated into code.
 💼 Portfolio — Business-Centric AI Projects
 
 📊 Real Estate Price Forecasting
+
 📍 Investor Use Case — Predict market shifts to time property deals
 💰 Impact: +92% R² → up to 18% improvement in acquisition timing
 🔗 View Project
