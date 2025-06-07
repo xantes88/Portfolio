@@ -1,70 +1,76 @@
-👤 Federico Petillo — From Finance Ops to AI-Driven Business Systems
-🔁 Strategic Career Shift: From Execution to Intelligence
-After 5 years managing and optimizing financial operations (AP, HR, payroll) in international environments — including nearly 3 years at DXC Technology — I saw the limits of manual processes, inefficiencies, and legacy tools.
+👤 Federico Petillo — From Finance Ops to AI-Driven Optimization
 
-That’s why I pivoted.
-With a Management degree from Bocconi University, complemented by advanced AI and Data Science training, I now design intelligent systems that automate decisions, extract value from data, and adapt to real-world business dynamics.
+🧭 The Shift: From Financial Ops to Smart Automation
 
-💡 What I Bring to the Table
-🔍 Deep business process insight from hands-on financial operations
+After 5 years in finance operations — leading AP, payroll, and vendor management at DXC Technology and other top-tier environments — I saw the same thing over and over:
+Repetitive work, costly delays, and systems that think as little as possible.
 
-🧠 AI systems built with explainability, compliance, and ROI in mind
+So I made a move.
 
-💬 Clear communication with both technical and non-technical stakeholders
+With a Bocconi degree in Management and new training in AI Engineering & Data Science, I now design intelligent systems that don’t just report — they decide.
 
-🚀 Agile mindset focused on delivering working prototypes fast
+🚀 I Don’t Build Dashboards. I Build Outcomes.
+Every project in this portfolio tackles a real-world use case.
+No toy datasets. No academic fluff. Just business value, translated into code.
 
-💼 Business-Focused AI Portfolio
+💼 Portfolio — Business-Centric AI Projects
+
 📊 Real Estate Price Forecasting
-Client Context: Real estate fund optimizing investment decisions
-Value: Anticipates market trends to enhance acquisition timing
-Metric: 92% R² → up to 18% gain in deal execution
-🔗 View
+📍 Investor Use Case — Predict market shifts to time property deals
+💰 Impact: +92% R² → up to 18% improvement in acquisition timing
+🔗 View Project
 
-🍍 Exotic Fruit Classification (ML)
-Client Context: Mid-size importer struggling with QA standardization
-Value: Reduces manual inspection errors by 3–5%
-Tech: Scikit-learn, CNN
-🔗 View
+🍍 Exotic Fruit Image Classifier
 
-🌼 Flower Recognition via Deep Learning
-Client Context: Agri-exporter (~2M shipments/year)
-Value: Prevents misclassifications in logistics → saves €20K+/year
-Tech: PyTorch, EfficientNetB0
-🔗 View
+📍 Food Importer — Prevent manual mislabeling at QA checkpoints
+🎯 Accuracy: >95% with Scikit-learn + image preprocessing
+🔗 View Project
 
-🧪 GAN-Based Data Augmentation for Power Plant Safety
-Client Context: European energy provider
-Value: Generates realistic turbine fault data to improve predictive maintenance models
-🔗 View
+🌼 Deep Learning for Flower Recognition
 
-🔍 Explainable AI for Model Compliance
-Client Context: Retail bank (~5M customers)
-Value: Cuts compliance audit prep time by €250K/year
-Tech: LIME, GradCAM, Integrated Gradients, Captum
-🔗 View
+📍 AgriTech Logistics — Avoid classification errors across 2M+ annual shipments
+💡 Model: EfficientNetB0, PyTorch
+🔗 View Project
 
-🤖 Reinforcement Learning for Cybersecurity
-Client Context: AI lab simulating intrusion response
-Value: +23% improved detection rate via SARSA/Q-learning
-🔗 View
+🧪 GAN-Driven Data Augmentation for Power Plant Safety
 
-📁 CRM CLI System in Python
-Client Context: SME insurance broker
-Value: Replaces spreadsheet workflows, saving 10+ hours/month
-🔗 View
+📍 Energy Sector — Simulate rare fault data for turbine models
+🛡️ Result: Improved fault prediction in critical infrastructure
+🔗 View Project
 
-📘 C++ Contact Manager
-Client Context: Logistics SME with offline requirements
-Value: Reliable, minimal system for client recordkeeping
-🔗 View
+🔍 Explainable AI for Regulated Environments
 
-🧠 Deep Learning Foundations (PyTorch)
-Client Context: Skill building & clean implementation
-Focus: Custom model architectures & pipeline design
-🔗 View
+📍 Retail Banking — Make AI audit-ready and human-readable
+💰 ROI: Save €250K/year in compliance prep
+🛠️ Tools: LIME, GradCAM, Captum
+🔗 View Project
 
-🎯 Let’s Collaborate
-If your company struggles with inefficient processes, repetitive work, or opaque decision systems — let’s fix that. I design intelligent automation that delivers tangible business impact.
+🤖 Reinforcement Learning: Cyber Attack Response
 
-📩 Let’s build smarter systems together. Reach out.
+📍 Security Simulation Lab — Train agents to defend systems
+⚔️ Outcome: +23% detection rate over heuristics
+🔗 View Project
+
+🧾 CRM System in Python (CLI)
+
+📍 Insurance Broker — Replace Excel-based client tracking
+🕒 Time Saved: >10 admin hours/month
+🔗 View Project
+
+📘 C++ Contact Book
+
+📍 On-Site Logistics Teams — Offline-ready contact management
+📦 Need Met: Robust local data storage
+🔗 View Project
+
+🧠 Deep Learning with PyTorch
+
+📍 Skill Accelerator — Build custom models from scratch
+🧩 Focus: Layered architecture, explainability, clean code
+🔗 View Project
+
+🧠 What I Bring to the Table
+
+✔️ Real-world process experience (not just theory)
+✔️ Communication skills to align tech with business
+✔️ Rapid prototyping for measurable, commercial impact
