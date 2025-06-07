@@ -86,4 +86,4 @@ Replace MNIST with banking-related image/text datasets
 
 Expand to SHAP, Anchors, and Counterfactuals
 
-Serve explanations via REST API for business un
+Serve explanations via REST API for business units
