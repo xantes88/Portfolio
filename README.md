@@ -1,24 +1,22 @@
-Introduzione
+I'm a professional with a strong background in finance and operations.
 
-Ciao! Sono Federico Petillo, 
-
-Un professionista appassionato di Data Science, Machine Learning e Intelligenza Artificiale con una forte esperienza in analisi dei dati, modelli predittivi, e vision artificiale, Con una solida formazione in Economia e Finanza e un Master in AI Engineering, ho acquisito competenze pratiche e teoriche per affrontare problematiche complesse.
-
-Nel corso della mia carriera, ho avuto l'opportunità di collaborare con aziende di grande rilievo, come DXC Technology, dove ho gestito progetti di miglioramento dei processi utilizzando le tecnologie più avanzate, da SAP alla gestione delle risorse tramite AI. Il mio obiettivo professionale è continuare a crescercome esperto in Data Science, lavorando su progetti ad alto impatto che sfruttano machine learning e deep learning per risolvere problemi concreti.
-
-In questo portfolio troverai una serie di progetti che evidenziano le mie competenze pratiche e la mia esperienza nei seguenti settori:
-
-Data Science & Machine Learning
-
-Computer Vision
-
-Intelligenza Artificiale (AI)
+After years of experience in multinational environments (DXC Technology, IQ-EQ, Università Bocconi), I decided to redirect my analytical mindset and process-driven approach towards **AI engineering**.
 
 
-Generative Ai
+I'm currently sharpening my skills in:
 
-Explainable Ai
+- 🧠 Deep Learning (CV, NLP,Computer Vision, Reinforcement Learning)
+- 📊 Data Science & Predictive Modeling
+- ⚙️ MLOps and scalable AI pipelines
+- 🔗 Bridging technical models with business value
 
-Ogni progetto include una descrizione dettagliata, il codice (disponibile su GitHub), i risultati ottenuti e le metodologie utilizzate, in modo da dare un quadro completo delle soluzioni sviluppate.
+All my projects aim to deliver **concrete impact**, whether it’s automating classification tasks, predicting housing prices, or simulating defensive AI agents for cybersecurity.
+
+### 📌 My mission:
+To join a high-impact AI or Data team where I can contribute from day one — with both technical skills and strategic thinking.
+
+---
+
+- 📬 Want to collaborate or discuss an opportunity? Let’s connect on [LinkedIn]([https://www.linkedin.com/in/federico-petillo-822b3644/) or reach out directly
 
 
