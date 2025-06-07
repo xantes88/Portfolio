@@ -1,112 +1,107 @@
-🛡️ Cybersecurity for Healthcare Using Reinforcement Learning
+🛡️ Cybersecurity for Healthcare using Reinforcement Learning
 
-🔍 Project Overview
+A Simulation Framework with SARSA and DDQN in IDS Environments
+This project explores the application of Reinforcement Learning (RL) for simulating and improving cyber defense strategies in sensitive environments like healthcare infrastructure. It leverages the gym-idsgame environment to model intrusion scenarios and trains RL agents (SARSA & DDQN) to learn defensive behaviors against random and maximal cyber attacks.
 
-This project explores how Reinforcement Learning (RL) can be applied to cyberattack defense strategies in healthcare systems. Two key algorithms are implemented and compared:
+🎯 Objective
 
-SARSA: A lightweight on-policy method
+To evaluate and compare two reinforcement learning techniques — SARSA (on-policy tabular learning) and DDQN (deep off-policy learning) — for their ability to learn and adapt to unpredictable cyber attacks within a controlled intrusion detection simulation.
 
-DDQN (Double Deep Q-Network): A more advanced, neural-network-based off-policy method
+🧠 Technologies Used
 
-We simulate a healthcare cybersecurity environment using gym-idsgame, enabling the agents to learn and adapt to random and strategic attack scenarios.
+Component	Description
+gym-idsgame	Simulates attacker-defender environments for RL training
+SARSA Agent	Tabular, on-policy agent for early-stage defense learning
+DDQN Agent	Deep Q-Learning agent with target networks and replay
+PyTorch	Used to implement and train neural networks for DDQN
+Matplotlib	Visualizes training reward evolution over episodes
 
-⚙️ Technologies & Libraries
-Python, Gym, PyTorch, Numpy, Matplotlib
+💼 Business Relevance
 
-Reinforcement Learning Algorithms: SARSA, DDQN
+Cybersecurity in healthcare is a high-stakes environment where even a few minutes of downtime can cost lives.
 
-Environment: gym-idsgame (IDS simulation for cybersecurity)
+✅ This project simulates how adaptive, self-learning defense systems can mitigate threats where static rule-based systems fall short.
 
-🧠 Algorithms
-✅ SARSA Agent
-Approach: On-policy learning
+Key Business Outcomes:
 
-Learning Rate (α): 0.1
+🧬 Healthcare Relevance: Simulates attack-defense in settings with sensitive data (e.g., patient records, connected medical devices)
 
-Discount Factor (γ): 0.9
+🔄 Adaptivity: RL agents learn to adapt to changing threat patterns
 
-Exploration Rate (ε): 0.1
+💸 Cost Efficiency: Reduces reliance on rule-based updates & manual monitoring
 
-State Handling: Q-table based, with discretized observations
+🔐 Resilience Simulation: Helps model breach-resistance of future network architectures
 
-Use Case: Suitable for smaller, simpler environments
+🧪 Use Case Scenarios
 
-🤖 DDQN Agent
-Approach: Off-policy with deep Q-learning
+🏥 Hospital Network Simulation: Test IDS policy learning against adversarial behavior
 
-Architecture: Two neural networks (Q-network & Target network)
+🧑‍⚕️ Medical IoT Defense: Model attacks on connected devices and adjust defenses
 
-Replay Memory: Experience buffer of 10,000 transitions
+📊 Security Policy Optimization: Use agent performance to tune resource allocation
 
-Batch Size: 64
+📉 Incident Response Simulation: Use RL reward drops to model threat detection timing
 
-Optimization: Adam optimizer with MSE loss
+📈 Performance Overview
 
-Use Case: More stable in complex environments with larger state spaces
+Metric	SARSA Agent	DDQN Agent
+Max Reward Achieved (Ep. 900)	23.42	39.10
+Stability over Episodes	Medium	Low (initially)
+Learning Curve	Steady Growth	Volatile, then rise
+Best Use Case	Simple attack patterns	Complex evolving threats
 
-🏥 Scenario
+🔍 Insight: DDQN's deep learning and replay memory enable long-term learning, while SARSA offers faster stability in simpler threat landscapes.
 
-Domain: Cyber defense in healthcare IT infrastructure
+🔁 Agent Comparison
 
-Simulation: Random attacks against a system with defense actions
+✅ SARSA:
+Pros: Simple, stable, lower resource use
 
-Goal: Train agents to learn optimal defense strategies over time
+Cons: Limited scalability in large/complex environments
 
-📊 Training Outcomes
-SARSA
-Episode	Total Reward
-0	~3.6
-300	~11.8
-900	~23.4
+✅ DDQN:
+Pros: Scalable, adaptable, better long-term results
 
-Trend: Gradual learning with improved performance
+Cons: Slower to stabilize, sensitive to hyperparameters
 
-Behavior: Smooth convergence, sensitive to exploration rate
+⚙️ How to Run
 
-Strength: Stable learning, interpretable policy
+# Clone the environment
+git clone https://github.com/Limmen/gym-idsgame
+cd gym-idsgame
+pip install -e .
 
-DDQN
-Episode	Total Reward
-0	~39.1
-300	~30.6
-900	~10.9
+# Install dependencies
+pip install gym-idsgame scikit-learn torch matplotlib
 
-Trend: High variance, initially strong but unstable
+# Run SARSA agent
+python sarsa_agent.py
 
-Behavior: Large reward swings; learning influenced by replay memory and delayed target updates
+# Run DDQN agent
+python ddqn_agent.py
 
-Strength: More suited for dynamic and high-dimensional attack environments
+📁 Project Structure
 
-🔬 Key Insights
+📦 cyber-rl-healthcare/
+├── sarsa_agent.py           # SARSA implementation
+├── ddqn_agent.py            # DDQN implementation
+├── results/                 # Plots and reward evolution
+├── README.md                # Project overview
+└── requirements.txt         # Dependencies
 
-SARSA: Easier to train and understand, ideal for interpretable models in regulated environments like healthcare.
+📊 Future Enhancements
 
-DDQN: More scalable and powerful, but requires careful tuning and longer training due to higher volatility.
+Area	Roadmap
+Environment	Add real-world intrusion data or simulated hospital topologies
+Evaluation	Integrate precision/recall of anomaly detection
+Visualization	Heatmaps of decision space and Q-table evolution
+Explainability	Add SHAP-like interpretation for DDQN neural weights
+Deployment	Wrap agents into a REST API for real-time inference
 
-🤝 Real-World Relevance
+📌 Key Learnings
+RL methods like SARSA can quickly stabilize but plateau early.
 
-This simulation reflects how AI agents could defend healthcare systems against cyber threats through autonomous learning. Real-world applications include:
+DDQN offers greater capacity to handle noise and complexity but requires longer training.
 
-Intrusion Detection Systems (IDS)
+Even simple environments reveal critical dynamics between exploration, exploitation, and policy stability in cyber defense.
 
-Adaptive firewalls
-
-Intelligent threat response automation
-
-📈 Future Work
-Introduce multi-agent settings for attack-defense dynamics
-
-Extend to Zero-Day attack simulations
-
-Integrate time-based or sequential attack vectors
-
-Deploy agent via Streamlit or FastAPI for demo
-
-📂 Project Structure
-├── sarsa_agent.py       # SARSA implementation
-├── ddqn_agent.py        # DDQN implementation
-├── environment.py       # Custom Gym environment
-├── train_sarsa.py       # SARSA training script
-├── train_ddqn.py        # DDQN training script
-├── plots/               # Training reward visualizations
-└── README.md            # This file
