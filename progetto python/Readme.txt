@@ -1,5 +1,7 @@
 📞 Phone Book Manager – Python JSON CLI Application
+
 🔍 Overview
+
 This project is a command-line contact manager developed in Python. It provides basic CRUD functionalities (Create, Read, Update, Delete) for managing personal or business contacts using a persistent JSON file as storage.
 
 It serves as a lightweight and extensible base for:
@@ -11,6 +13,7 @@ Backend logic for address book applications
 Data structure manipulation practice (lists, dictionaries, I/O)
 
 🧠 Features
+
 ✅ Add new contacts with validation
 
 📖 Display all saved contacts
@@ -26,9 +29,6 @@ Data structure manipulation practice (lists, dictionaries, I/O)
 🔒 Duplicate prevention logic
 
 🗂️ File Structure
-bash
-Copia
-Modifica
 📁 phonebook/
 ├── Contacts.json          # Persistent data storage
 ├── phonebook.py           # Main CLI logic
@@ -36,22 +36,16 @@ Modifica
 🚀 How to Run
 Clone the repository:
 
-bash
-Copia
-Modifica
+
 git clone https://github.com/yourusername/phonebook.git
 cd phonebook
 Make sure you have Python 3 installed:
 
-bash
-Copia
-Modifica
+
 python --version
 Run the script:
 
-bash
-Copia
-Modifica
+
 python phonebook.py
 Interact with the menu-driven interface to add/view/search/edit/delete contacts.
 
