@@ -1,61 +1,66 @@
-# 💼 Federico Petillo — AI & Data Portfolio
+👤 Federico Petillo — From Finance Ops to AI-Driven Process Optimization
 
-Welcome to my professional portfolio.
+↺ Strategic Career Shift: From Execution to Intelligence
 
-I come from a background in **accounts payable and financial operations**, with nearly 5 years of experience at DXC Technology. Today, I’m transitioning into a role that combines this operational expertise with **artificial intelligence and machine learning**, focused on delivering **measurable business value** through data-driven automation and intelligent systems.
+With 5+ years leading Accounts Payable operations at DXC Technology and a Management degree from Bocconi University, I experienced firsthand the inefficiencies of manual, rule-based financial processes.
 
-## 🧭 Why This Portfolio?
+That's why I pivoted.Today, I build intelligent systems — not just dashboards or scripts — but tools that automate decisions, generate insights, and adapt to real-world uncertainty.
 
-This portfolio showcases my hands-on capabilities in:
-- AI project delivery using **Python, PyTorch, Scikit-learn, Streamlit**
-- Building explainable, production-oriented models
-- Designing solutions around real-world use cases in **finance, logistics, and agritech**
+🌟 Mission: Business-Ready AI That Delivers Impact
 
-My projects are not academic exercises — they simulate actual business problems, propose automated solutions, and quantify potential economic impact.
+This portfolio doesn't just showcase code. It demonstrates how to transform business bottlenecks into scalable, intelligent systems.Each project simulates or addresses real use cases with measurable value.
 
----
+💼 AI Portfolio — Commercially Relevant Projects
 
-## 🔄 Career Pivot: From Finance Ops to AI Engineering
+📊 Real Estate Price Forecasting
 
-While working in accounts payable, I saw firsthand how **manual and repetitive** many financial processes are — and how little insight businesses extract from their own data. This sparked a career shift:
+Client Context: Real estate fund optimizing investment decisions.Value: Predicts market trends to time property acquisitions.Metric: 92% R² score enables up to 18% improvement in deal efficiency.View Project
 
-> Instead of just executing financial processes, I now design intelligent systems that **optimize, automate, and explain them.**
+🍊 Exotic Fruit Classification (ML)
 
-I’ve formalized this transition with:
-- IBM Data Science Professional Certificate
-- Microsoft AI Engineering Specialization
-- Hands-on AI projects solving **real business bottlenecks**
+Client Context: Import/export wholesaler with inconsistent QA labeling.Value: Prevents 3-5% error rate in visual inspection workflows.Metric: 95%+ classification accuracy.View Project
 
----
+📁 Python-Based CRM
 
-## 🚀 Business-Driven AI Projects
+Client Context: SME insurance broker overwhelmed by spreadsheets.Value: Eliminates 10+ admin hours/month with structured data entry.Tech: CLI, ID validation, data persistence.View Project
 
-| Project | Use Case | Business Value |
-|--------|----------|----------------|
-| [📦 Accounts Payable Forecasting](https://github.com/xantes88/Portfolio/tree/main/AP-Forecasting) | Predict future payment flows using historical invoices | Reduce late fees and improve cash planning |
-| [📈 Cash Flow Dashboard (Streamlit)](https://github.com/xantes88/Portfolio/tree/main/CashFlow-KPI-Dashboard) | Visualize KPIs for financial health and supplier performance | Enables better decisions and stakeholder reporting |
-| [🧠 Explainable AI for Digit Recognition](https://github.com/xantes88/Portfolio/tree/main/XAI-MNIST) | Build trust in neural network decisions via LIME and GradCAM | Prepares models for audit and regulatory use |
-| [🌻 Flower Classifier (AgriTech)](https://github.com/xantes88/Portfolio/tree/main/AgriTech-FlowerClassifier) | Identify plant species from images | Prototype for automated crop monitoring in agriculture |
-| [💬 Sentiment Analysis API](https://github.com/xantes88/sentiment-analysis-api) | NLP service for classifying customer feedback | Enhances customer support with intelligent triage |
+📗 C++ Contact Manager
 
----
+Client Context: On-site logistics firm needing offline-ready tools.Value: Enables robust contact tracking without internet dependency.View Project
 
-## 🔍 What I Can Bring to Your Team
+🤖 Reinforcement Learning — Intrusion Response Simulator
 
-- A unique **cross-domain profile**: finance operations + applied AI
-- Business fluency: I speak the language of **both data and decision-making**
-- Rapid prototyping skills: from notebook to API to dashboard
-- Obsession with clarity, explainability, and outcome-based metrics
+Client Context: Cybersecurity lab modeling attacker/defender behavior.Value: Improves agent detection via SARSA and Q-Learning.Metric: +23% over baseline heuristics.View Project
 
----
+🌼 Deep Learning — Flower Species Recognition (AgriTech)
 
-## 📢 Let’s Talk
+Client Context: Agri-exporter with ~2M shipments/year.Value: Reduces labeling errors in QA, saving €20K+/year.Tech: EfficientNetB0, PyTorch, Transfer Learning.View Project
 
-Whether you're looking to automate your back-office workflows, build AI into your compliance pipeline, or launch your first ML pilot — I can help.
+🧪 Data Augmentation for Power Plant Safety (GANs)
 
-**📧 Reach out via [LinkedIn](https://www.linkedin.com/in/federico-petillo)** or clone any repo above and test it yourself.
+Client Context: EU utility prototyping predictive maintenance.Value: Simulates fault conditions for safer turbine models.View Project
 
----
+🔍 Explainable AI for Model Compliance
 
-> “AI is not just about models — it’s about solving *your* business problem faster, smarter, and more transparently.”  
-— Federico Petillo
+Client Context: Retail bank needing audit-compliant AI.Value: Transparent model decisions cut compliance prep costs by €250K/year.Tech: LIME, GradCAM, Captum, Integrated Gradients.View Project
+
+🧠 PyTorch Practice & Model Training
+
+Client Context: Self-driven skill development.Focus: Implementing deep learning models from scratch with clean architecture.View Project
+
+🧠 What I Offer
+
+🛏️ ML/AI systems grounded in business reality
+
+📈 Data-driven automation for real cost/time reduction
+
+📄 Clear model communication for non-technical decision-makers
+
+🚀 Agile delivery of PoCs with real commercial impact
+
+🚀 Let’s Talk
+
+If your company is stuck in process inefficiencies or drowning in repetitive decisions — let's build something smarter.
+
+📧 Reach out — I build intelligent systems that deliver results.
+
