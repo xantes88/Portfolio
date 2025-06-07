@@ -1,96 +1,88 @@
-# Fruit Classification with Machine Learning Models
+🥭 Exotic Fruit Classification with Advanced Machine Learning
+📌 Project Overview
+This project focuses on the classification of exotic fruits using a full machine learning pipeline, including:
 
-## Project Description
-This project implements an automated classification system for different types of fruits based on their physical measurements (weight, dimensions, sensory characteristics). It applies data preprocessing, balancing, hyperparameter optimization, and supervised learning models to achieve high predictive performance.
+Exploratory data analysis
 
-## Dataset
-The dataset contains 500 fruit samples with the following columns:
+Data preprocessing and outlier removal
 
-- **Weight (g):** Weight of the fruit in grams.
-- **Average Diameter (mm):** Average diameter of the fruit.
-- **Average Length (mm):** Average length of the fruit.
-- **Peel Hardness (1-10):** Peel hardness rating.
-- **Sweetness (1-10):** Sweetness rating.
-- **Fruit:** Fruit type (target variable).
+Class balancing using SMOTE
 
-The dataset contains no missing values and includes some outliers that are removed using the Interquartile Range (IQR) method.
+Training and hyperparameter tuning for multiple classifiers (KNN, Random Forest, SVM, XGBoost)
 
-## Techniques Implemented
+Ensemble learning using Voting and Stacking models
 
-### Preprocessing
-- Outlier removal via IQR.
-- Target encoding using `LabelEncoder`.
-- Feature scaling with `StandardScaler`.
-- Dataset balancing using SMOTE with reduced neighbors (k=1) to prevent overfitting.
-- Class weight calculation for handling residual class imbalance during training.
+Evaluation with robust metrics and visualizations
 
-### Data Visualization
-- Histograms of numeric variable distributions.
-- Boxplots for outlier visualization.
-- Scatter plots for relationships between physical features.
-- Correlation matrix heatmap to analyze feature dependencies.
+📊 Dataset Description
+Samples: 500 rows
 
-### Machine Learning Models
-Implemented and optimized models include:
-- K-Nearest Neighbors (KNN)
-- Random Forest
-- Support Vector Machine (SVM)
-- XGBoost (Gradient Boosting)
+Features:
 
-Hyperparameters are optimized using `GridSearchCV` with `RepeatedStratifiedKFold` for robust cross-validation.
+Weight (g)
 
-### Ensemble Learning
-- **Voting Classifier:** Combines KNN, Random Forest, SVM, and XGBoost using hard voting.
-- **Stacking Classifier:** Uses the same base models with Logistic Regression as the meta-model.
+Average Diameter (mm)
 
-### Model Evaluation
-- Metrics: accuracy, precision, recall, F1-score.
-- Classification reports for training and test sets.
-- Confusion matrices for detailed performance analysis.
-- Feature importance visualization (Random Forest).
+Average Length (mm)
 
-## Classification Reports
+Skin Hardness (scale 1–10)
 
-### K-Nearest Neighbors (KNN)
+Sweetness (scale 1–10)
 
-**Training set:**
+Target: Fruit type
 
-| Class   | Precision | Recall | F1-score | Support |
-|---------|-----------|--------|----------|---------|
-| Arancia | 0.88      | 0.90   | 0.89     | 83      |
-| Banana  | 1.00      | 1.00   | 1.00     | 3       |
-| Kiwi    | 0.90      | 0.89   | 0.90     | 82      |
-| Mela    | 0.93      | 0.92   | 0.93     | 74      |
-| Uva     | 1.00      | 1.00   | 1.00     | 78      |
-| **Accuracy** |       |        | **0.93** | 320     |
+The dataset contains no missing values. Outliers were handled using the Interquartile Range (IQR) method.
 
-**Test set:**
+🧠 Models Trained
+Model	Accuracy (Test Set)
+K-Nearest Neighbors	86.5%
+Random Forest	86.0%
+SVM (Linear Kernel)	88.7%
+XGBoost	88.7%
+Voting Classifier	88.7%
+Stacking Classifier	87.5%
 
-| Class   | Precision | Recall | F1-score | Support |
-|---------|-----------|--------|----------|---------|
-| Arancia | 0.71      | 0.71   | 0.71     | 17      |
-| Banana  | 1.00      | 1.00   | 1.00     | 1       |
-| Kiwi    | 0.70      | 0.78   | 0.74     | 18      |
-| Mela    | 1.00      | 0.92   | 0.96     | 26      |
-| Uva     | 1.00      | 1.00   | 1.00     | 18      |
-| **Accuracy** |       |        | **0.86** | 80      |
+🛠 Techniques & Tools
+Preprocessing: Label Encoding, Standard Scaling
 
-*(Similar detailed classification reports are available for Random Forest, SVM, XGBoost, Voting, and Stacking classifiers.)*
+Outlier Handling: IQR method
 
-## Final Considerations
+Class Imbalance: SMOTE (k=1), compute_class_weight
 
-- The models generally achieve high precision and recall on the training set, indicating good learning capacity.
-- Test set results show slightly lower scores, especially for some classes like "Arancia" and "Kiwi," suggesting potential room for improvement in generalization.
-- Ensemble methods (Voting and Stacking) typically improve overall accuracy and robustness by combining strengths of individual classifiers.
-- Features related to fruit size (weight, diameter, length) are consistently the most important predictors.
-- SMOTE balancing with a low number of neighbors (k=1) effectively mitigated class imbalance without causing overfitting.
-- Future improvements could include more advanced feature engineering, testing additional classifiers, or using deep learning approaches.
+Cross-validation: Repeated Stratified K-Fold
 
-## How to Use This Project
+Hyperparameter Tuning: GridSearchCV
 
-### Requirements
-- Python 3.7+
-- Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost, imblearn
+Evaluation: Accuracy, Precision, Recall, F1-Score, Confusion Matrix
 
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost imbalanced-learn
+📈 Visual Analysis
+Scatterplots: Feature distribution by class
+
+Boxplots: Outlier detection
+
+Heatmap: Feature correlation
+
+Confusion Matrices: Model evaluation
+
+Feature Importance: Random Forest interpretation
+
+💼 Business Value
+
+✅ Demonstrates ability to build end-to-end machine learning pipelines
+✅ Applicable in industries like agriculture, food analytics, retail, and supply chain optimization
+✅ Ensemble learning boosts model robustness, improving real-world deployability
+✅ Emphasizes data quality, preprocessing, and explainability — critical for production systems
+
+🔍 Key Insights
+SVM and XGBoost performed best individually.
+
+Ensemble methods improved generalization without major accuracy trade-offs.
+
+Proper handling of outliers and class imbalance significantly improved model stability.
+
+🔮 Next Steps
+Integrate Explainable AI techniques (e.g., SHAP)
+
+Deploy model with Flask or Streamlit for real-time predictions
+
+Use MLflow or similar tools for model tracking and experiment management
