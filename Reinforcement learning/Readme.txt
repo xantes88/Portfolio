@@ -1,154 +1,112 @@
-Reinforcement Learning for Cybersecurity: SARSA and DDQN Agents
-Overview
-This project explores the application of Reinforcement Learning (RL) to develop defensive agents capable of countering cyberattacks. Two RL algorithms were implemented: SARSA, an on-policy method using a Q-table, and Double Deep Q-Network (DDQN), an off-policy deep learning-based approach. These agents were trained and evaluated using the gym-idsgame environment under two attack scenarios: random attack and maximal attack.
+🛡️ Cybersecurity for Healthcare Using Reinforcement Learning
 
-Table of Contents
-Project Structure
+🔍 Project Overview
 
-SARSA Implementation
+This project explores how Reinforcement Learning (RL) can be applied to cyberattack defense strategies in healthcare systems. Two key algorithms are implemented and compared:
 
-Algorithm Overview
+SARSA: A lightweight on-policy method
 
-Hyperparameters
+DDQN (Double Deep Q-Network): A more advanced, neural-network-based off-policy method
 
-Training Results
+We simulate a healthcare cybersecurity environment using gym-idsgame, enabling the agents to learn and adapt to random and strategic attack scenarios.
 
-Analysis
+⚙️ Technologies & Libraries
+Python, Gym, PyTorch, Numpy, Matplotlib
 
-DDQN Implementation
+Reinforcement Learning Algorithms: SARSA, DDQN
 
-Algorithm Overview
+Environment: gym-idsgame (IDS simulation for cybersecurity)
 
-Hyperparameters
+🧠 Algorithms
+✅ SARSA Agent
+Approach: On-policy learning
 
-Training Results
-
-Analysis
-
-Comparative Insights
-
-Final Considerations
-
-Future Work
-
-Project Structure
-sarsa_agent.py: SARSA agent implementation.
-
-ddqn_agent.py: DDQN agent implementation.
-
-main.py: Main training and evaluation script.
-
-requirements.txt: Python package dependencies.
-
-SARSA Implementation
-Algorithm Overview
-SARSA (State-Action-Reward-State-Action) is an on-policy RL algorithm that updates its Q-values based on the actions it actually takes, allowing the agent to continuously adapt its behavior as it interacts with the environment.
-
-SARSA is particularly suitable for discrete, relatively simple environments like random attack simulations, where a compact state-action space allows for efficient Q-table management.
-
-Hyperparameters
 Learning Rate (α): 0.1
-
-Discount Factor (γ): 0.99
-
-Exploration Rate (ε): 0.1
-
-Episodes: 1000
-
-Training Results
-Episode	Total Reward
-0	3.60
-100	21.66
-200	30.56
-300	6.46
-400	10.21
-500	5.16
-600	9.54
-700	10.24
-800	9.99
-900	6.17
-
-Analysis
-Initial Learning (Ep. 0–200): The agent improves its behavior over time, gradually increasing its average reward.
-
-Fluctuations: The on-policy nature of SARSA causes reward variability due to ongoing exploration.
-
-Stability: Although convergence is slow, the agent becomes increasingly effective in defending against random attacks.
-
-DDQN Implementation
-Algorithm Overview
-Double Deep Q-Network (DDQN) is an off-policy deep reinforcement learning algorithm that uses two networks:
-
-A Q-network for action selection
-
-A target network for Q-value stabilization
-
-DDQN reduces overestimation bias through double Q-learning and uses experience replay to improve sample efficiency.
-
-Hyperparameters
-Learning Rate (α): 0.001
 
 Discount Factor (γ): 0.9
 
 Exploration Rate (ε): 0.1
 
+State Handling: Q-table based, with discretized observations
+
+Use Case: Suitable for smaller, simpler environments
+
+🤖 DDQN Agent
+Approach: Off-policy with deep Q-learning
+
+Architecture: Two neural networks (Q-network & Target network)
+
+Replay Memory: Experience buffer of 10,000 transitions
+
 Batch Size: 64
 
-Replay Memory: 10,000
+Optimization: Adam optimizer with MSE loss
 
-Episodes: 1000
+Use Case: More stable in complex environments with larger state spaces
 
-Training Results
+🏥 Scenario
+
+Domain: Cyber defense in healthcare IT infrastructure
+
+Simulation: Random attacks against a system with defense actions
+
+Goal: Train agents to learn optimal defense strategies over time
+
+📊 Training Outcomes
+SARSA
 Episode	Total Reward
-0	39.10
-100	5.14
-200	1.43
-300	30.68
-400	8.84
-500	5.68
-600	3.48
-700	6.17
-800	6.40
-900	10.99
+0	~3.6
+300	~11.8
+900	~23.4
 
-Analysis
-Stability: DDQN exhibits higher variance early in training but stabilizes with better rewards as learning progresses.
+Trend: Gradual learning with improved performance
 
-Effectiveness: Able to generalize well in both random and complex (maximal) attack settings.
+Behavior: Smooth convergence, sensitive to exploration rate
 
-Efficiency: Experience replay and separate target network lead to faster convergence compared to SARSA.
+Strength: Stable learning, interpretable policy
 
-Comparative Insights
-Feature	SARSA	DDQN
-Learning Type	On-policy	Off-policy
-Representation	Tabular	Neural Network
-Exploration Strategy	ε-greedy	ε-greedy
-Sample Efficiency	Low	High (via experience replay)
-Stability	Moderate	Moderate to High (after warm-up)
-Performance (Random)	Satisfactory	Good
-Performance (Maximal)	Limited	Robust
+DDQN
+Episode	Total Reward
+0	~39.1
+300	~30.6
+900	~10.9
 
-Final Considerations
-The results demonstrate that both SARSA and DDQN can effectively learn defensive behaviors in cyber environments, but they serve different roles:
+Trend: High variance, initially strong but unstable
 
-SARSA performs well in simple, discrete scenarios like random attacks. It is computationally lightweight and easier to implement, but struggles with complex attack patterns or continuous state spaces.
+Behavior: Large reward swings; learning influenced by replay memory and delayed target updates
 
-DDQN, on the other hand, scales effectively to more complex environments like maximal attacks. Its use of deep learning enables generalization across larger and more varied state spaces, though it requires more computational resources and longer training times.
+Strength: More suited for dynamic and high-dimensional attack environments
 
-Key Takeaways
-SARSA shows steady, interpretable progress, ideal for baseline evaluations or simple tasks.
+🔬 Key Insights
 
-DDQN offers superior adaptability and learning capacity, making it better suited for real-world or dynamic environments.
+SARSA: Easier to train and understand, ideal for interpretable models in regulated environments like healthcare.
 
-Both agents benefit from a careful balance between exploration and exploitation, controlled by the ε parameter.
+DDQN: More scalable and powerful, but requires careful tuning and longer training due to higher volatility.
 
-Training reward plots indicate meaningful improvements for both agents, especially evident in the late training stages of DDQN.
+🤝 Real-World Relevance
 
-Future Work
-Integrate more advanced RL techniques like Proximal Policy Optimization (PPO) or Actor-Critic models.
+This simulation reflects how AI agents could defend healthcare systems against cyber threats through autonomous learning. Real-world applications include:
 
-Apply curriculum learning to improve early-stage convergence.
+Intrusion Detection Systems (IDS)
 
-Simulate real-world threat models involving adaptive adversaries.
+Adaptive firewalls
 
-Implement online learning for continuous agent improvement in production environments.
+Intelligent threat response automation
+
+📈 Future Work
+Introduce multi-agent settings for attack-defense dynamics
+
+Extend to Zero-Day attack simulations
+
+Integrate time-based or sequential attack vectors
+
+Deploy agent via Streamlit or FastAPI for demo
+
+📂 Project Structure
+├── sarsa_agent.py       # SARSA implementation
+├── ddqn_agent.py        # DDQN implementation
+├── environment.py       # Custom Gym environment
+├── train_sarsa.py       # SARSA training script
+├── train_ddqn.py        # DDQN training script
+├── plots/               # Training reward visualizations
+└── README.md            # This file
