@@ -6,7 +6,7 @@ With 5+ years of experience managing SAP-based operations in Accounts Payable, H
 
 That’s why I transitioned from **operating** the process — to **improving** it with automation, analytics, and explainability.
 
-Now I design Python- and SQL-based tools that:
+Now I design Python tools that:
 
 - ✅ Automate routine workflows  
 - ✅ Improve decision accuracy with real-time insights  
@@ -61,7 +61,7 @@ Now I design Python- and SQL-based tools that:
 ## 🧠 What I Bring:
 
 - ✔️ Real-world operations expertise in SAP-driven finance  
-- ✔️ Strong skills in Python, SQL, Power BI, PyTorch  
+- ✔️ Strong skills in Python, SQL, Power BI, Deep Learning, Machine Learning 
 - ✔️ Projects designed for business impact 
 - ✔️ Clear communication between tech teams and business stakeholders  
 
