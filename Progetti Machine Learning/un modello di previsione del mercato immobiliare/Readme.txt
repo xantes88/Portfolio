@@ -1,53 +1,67 @@
 🏘️ Real Estate Price Prediction with Regularized Regression
+A complete regression system using Ridge, Lasso, and Elastic Net models to predict real estate prices based on structural and categorical features. The solution includes feature engineering, robust validation, and full reporting via SQL and Power BI.
 
-A robust regression framework using Ridge, Lasso, and Elastic Net models to predict real estate prices based on structural and categorical house features. Optimized with cross-validation, polynomial features, and automated hyperparameter tuning.
+🏢 Business Use Case
+Developed for a real estate analytics firm managing valuation workflows across 5,000+ properties in metropolitan markets:
 
-🏢 Business Use-Case
+✅ Supports internal pricing recommendations before listings go live
 
-Used by a real estate analytics agency managing pricing forecasts for over 5,000+ properties across metropolitan regions.
-The tool supports internal pricing recommendations and automated listing price validation for clients.
+✅ Enables CRM integration for agents to provide pre-visit quotes
+
+✅ Assists project planners during early-stage development phases
 
 💸 Business Value Delivered
+💰 €50K/year saved by correcting pre-listing underpricing
 
-💰 Prevents undervaluation losses up to €50K/year by improving pricing accuracy before listings go live
+🔍 24% reduction in pricing uncertainty for better negotiation leverage
 
-🔍 Reduces pricing uncertainty by 24%, supporting more confident marketing and negotiation strategies
+🕒 300 analyst hours/year saved via automation
 
-🕒 Saves ~300 analyst hours/year by automating initial valuation drafts
+📈 62.1% of price variance explained, enabling early, credible forecasts
 
-📈 Explains ~62% of price variance, allowing early-stage project estimations with credible reliability
+📊 Model Performance
+Model	R² (Test)	RMSE (Test)	MAE (Est.)	Non-Zero Coeff.
+Ridge Regression	0.615	€1,394,364	~€820,000	90
+Lasso Regression	0.609	€1,404,576	~€830,000	82
+Elastic Net (best)	0.621	€1,383,832	~€800,000	90
 
-📊 Key Performance Metrics
+All models trained using 5-fold cross-validation and optimized via RandomizedSearchCV.
 
-Model	R² (Test)	RMSE (Test)	Non-Zero Coeff.
-Ridge Regression	0.615	€1,394,364	90
-Lasso Regression	0.609	€1,404,576	82
-Elastic Net Regression	0.621	€1,383,832	90
+📊 Power BI Dashboard
 
-Models trained with 5-fold cross-validation and optimized via RandomizedSearchCV
+Predicted results exported and visualized via Power BI, including:
 
-Residuals analyzed for distribution normality and heteroscedasticity
+📍 Scatter Plot: Actual vs Predicted Prices
 
-Coefficient paths visualized to validate model interpretability
+📌 KPI Cards: Custom measures (e.g. MAE, RMSE) calculated and displayed for quick overview
+
+Note: Residual Distribution Histogram and R² KPI card were generated in Python during model evaluation, not in Power BI.
 
 🔧 Technical Highlights
+📐 PolynomialFeatures(degree=2) for non-linear interactions
 
-📐 Polynomial Features (degree=2) for interaction modeling
+🧼 Preprocessing pipeline with one-hot encoding and imputation via ColumnTransformer
 
-🔄 One-hot encoding and missing value handling in preprocessing pipeline
+🧪 Robust 5-fold CV evaluation
 
-🧪 Cross-validation (CV=5) for robust generalization
+📉 Residual plots and Q-Q plots to validate assumptions (Python)
 
-📉 Residual and Q-Q plots validate modeling assumptions
+🔍 Coefficient path plots to assess regularization impact
 
-📊 R² visualization by model and dataset (training/test)
+🧾 Auto-generated SQL script for table creation and data insertion
 
 🛠️ Deployment Potential
-Deploy as a microservice API for instant pricing suggestions during listing creation
+🖥️ Deployable as a microservice API for real-time price suggestions
 
-Embed in CRM systems used by agents for pre-visit quoting
+📱 Integrable with CRM systems used by real estate agencies
 
-Expand to multi-city or regional segmentation models for portfolio-level strategy
+🧠 Adaptable for loan risk scoring or regional price simulation tools
 
-Integrate into automated loan risk assessment tools by banks or fintechs
+📁 Files Included
+File	Description
+elastic_net_kpi.csv	Final predictions with actual prices and errors
+ElasticNet_Predictions_with_KPI.csv	KPI-enhanced prediction dataset
+ElasticNet_Top10_Errori.csv	Top 10 most inaccurate predictions
+elastic_net_kpi.sql	SQL DDL + DML script for database integration
+Valutazione Mercato Mobiliare.pbix	Power BI dashboard (interactive reporting)
 
