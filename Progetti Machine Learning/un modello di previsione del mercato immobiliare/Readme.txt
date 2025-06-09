@@ -63,5 +63,5 @@ elastic_net_kpi.csv	Final predictions with actual prices and errors
 ElasticNet_Predictions_with_KPI.csv	KPI-enhanced prediction dataset
 ElasticNet_Top10_Errori.csv	Top 10 most inaccurate predictions
 elastic_net_kpi.sql	SQL DDL + DML script for database integration
-Valutazione Mercato Mobiliare.pbix	Power BI dashboard (interactive reporting)
+elastic_net_kpi.pbix	Power BI dashboard (interactive reporting)
 
