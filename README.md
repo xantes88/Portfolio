@@ -18,42 +18,34 @@ Now I design Python tools that:
 
 ### 📊 Real Estate Forecasting (Regression)  
 **🏢 Use Case**: Support timing of property deals for real estate investors  
-**📈 Result**: 92% R² → up to 18% better acquisition strategy  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/un%20modello%20di%20previsione%20del%20mercato%20immobiliare)
 
 ### 🍍 Fruit Classification (ML)  
-**🍇 Use Case**: Reduce QA labeling errors in import/export  
-**🎯 Impact**: Prevents 3–5% misclassification in visual checks  
+**🍇 Use Case**: Reduce QA labeling errors in import/export   
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/classificazione%20frutti%20esotici)
 
 ### 🧾 Python Contact Book (CLI)  
 **🚛 Use Case**: Local contact tracking for field logistics  
-**💡 Value**: Ensures robustness without cloud dependency  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/progetto%20python)
 
 ### 📘 C++ CRM system 
-**📋 Use Case**: Replace Excel-based tracking in insurance SME  
-**⏱️ Time Saved**: 10+ hours/month  
+**📋 Use Case**: Replace Excel-based tracking in insurance SME   
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/progetto%20c%2B%2B)
 
 ### 🧪 Generative AI – Power Plant Fault Simulation  
 **⚡ Use Case**: Simulate rare faults for turbine safety training  
-**📊 Impact**: Strengthens anomaly detection in critical infrastructure  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Generative%20AI/Data%20agumentation%20for%20power%20plant%20safety)
 
 ### 🔍 Explainable AI for Compliance  
-**🏦 Use Case**: Make AI decisions audit-ready  
-**💰 ROI**: Up to €250K/year saved on compliance reviews  
+**🏦 Use Case**: Make AI decisions audit-ready   
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Explainable%20AI)
 
 ### 🌼 Deep Learning – Flower Recognition  
 **🚚 Use Case**: Prevent misclassification in 2M+ agri shipments  
-**🧠 Tech**: PyTorch + Transfer Learning  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Deep%20Learning/Computer%20Vision)
 
 ### 🤖 Reinforcement Learning – Cyber Defense  
 **🔐 Use Case**: Simulate attack/defense in AI-driven security  
-**📈 Impact**: +23% detection rate improvement  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Reinforcement%20learning)
 
 ---
