@@ -1,14 +1,17 @@
 📊 Advanced Analytics for Invoice Payment Risk
+
 Proactive Invoice Monitoring with Machine Learning, SHAP & SAP-like Simulation
 
 Predict which vendor invoices are at risk of late payment and prioritize action before financial damage occurs.
 
 💼 Executive Summary
+
 Companies lose substantial amounts monthly due to late invoice payments. This project simulates a real-world Shared Services Center environment using SAP-like invoice fields (e.g., gl_code, company_code, vendor_region, invoice_block_reason) and develops a machine learning-based risk detection system.
 
 Leveraging predictive analytics, explainable AI (SHAP), and Power BI reporting, it enables proactive intervention and cash flow optimization — detecting payment risks before due dates.
 
 🔍 Business Scenario
+
 🧾 Company Profile
 
 Mid-sized enterprise with 5 business units processing 50,000+ invoices annually
@@ -26,6 +29,7 @@ Lost early payment discounts and penalties totaling around €1.2M/year
 Manual invoice reviews are time-consuming and lack clear risk visibility
 
 ✅ Solution
+
 This project builds a machine learning classifier to flag at-risk invoices before the due date and assign a priority_action. Sample output:
 
 invoice_id	vendor_name	risk_score	priority_action
@@ -34,6 +38,7 @@ invoice_id	vendor_name	risk_score	priority_action
 391	General Maint.	0.35	Low Risk – No Action
 
 💰 Estimated ROI – Simulation
+
 📊 Annual Impact:
 
 50,000 invoices/year × 20% late = 10,000 at risk
@@ -45,6 +50,7 @@ Average saving per invoice = €80 (discounts, penalties, workload)
 💸 €480,000/year recovered (improved cash flow + avoided penalties)
 
 🔧 Features & Pipeline
+
 ✅ SAP-like Fields: gl_code, company_code, vendor_region, invoice_block_reason, payment_term
 
 📈 Modeling: Random Forest & XGBoost with SMOTE balancing and Stratified K-Fold validation
@@ -58,6 +64,7 @@ Average saving per invoice = €80 (discounts, penalties, workload)
 🛠️ Deployment-ready Outputs: CSV files with alerts and KPIs for operational use
 
 🧠 Workflow
+
 Data Simulation of 1,000+ invoices with realistic SAP-like fields
 
 Feature Engineering including urgency scores, overdue flags, and vendor risk history
@@ -76,6 +83,7 @@ Retraining Block for continuous learning (if new_data: retrain())
 Interactive visualization of invoice risk by vendor, region, GL account, and exposure — tailored for AP managers and finance controllers.
 
 🛠 Deployment & Integration
+
 📥 Input
 invoices_enhanced.csv — All SAP-like invoice features and labels
 new_data.csv — Optional, for incremental retraining
@@ -97,6 +105,7 @@ Embed Power BI dashboards in finance portals
 Automate retraining via cron or GitHub Actions
 
 📌 Summary for Business
+
 If you are a CFO or Finance Operations Lead, this project offers:
 
 ✔️ Early visibility on invoice payment risks
@@ -110,6 +119,7 @@ If you are a CFO or Finance Operations Lead, this project offers:
 ✔️ Scalable and production-ready analytic solution
 
 🤖 Future Enhancements
+
 Incorporate LLM-powered invoice data extraction (PDFs/OCR)
 
 Integrate with SAP BTP and Esker APIs for end-to-end automation
