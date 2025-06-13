@@ -34,14 +34,6 @@ That’s why I transitioned from **operating** the process — to **improving** 
 📦 Computer vision pipeline + business-focused model explainability
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/classificazione%20frutti%20esotici)
 
-🧾 Python Contact Book (CLI)  
-🚛 Use Case**: Local contact tracking for field logistics  
-🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/progetto%20python)
-
-📘 C++ CRM system 
-📋 Use Case**: Replace Excel-based tracking in insurance SME   
-🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/progetto%20c%2B%2B)
-
 🧪 Generative AI – Power Plant Fault Simulation  
 ⚡ Use Case**: Simulate rare faults for turbine safety training
 🧠 Vision GANs + scenario-based synthetic data generation
@@ -52,13 +44,7 @@ That’s why I transitioned from **operating** the process — to **improving** 
 📑 Focus on SHAP, LIME, and model transparency for regulators
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Explainable%20AI)
 
-🌼 Deep Learning – Flower Recognition  
-🚚 Use Case**: Prevent misclassification in 2M+ agri shipments  
-🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Deep%20Learning/Computer%20Vision)
 
-🤖 Reinforcement Learning – Cyber Defense  
-🔐 Use Case**: Simulate attack/defense in AI-driven security  
-🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Reinforcement%20learning)
 
 ---
 
