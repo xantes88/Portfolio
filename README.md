@@ -7,6 +7,7 @@ With 5+ years of experience managing SAP-based operations in Accounts Payable, H
 That’s why I transitioned from **operating** the process — to **improving** it with automation, analytics, and explainability.
 
 🛠 Now I Design Intelligent Tools That:
+
 ✅ Automate routine and repetitive workflows across finance and operations
 
 ✅ Improve decision accuracy through real-time insights and risk prediction
