@@ -1,79 +1,67 @@
 # 👤 Federico Petillo — Business Operations Meets Data Automation
 
-## 🎯 From Finance Execution to Scalable Optimization
+## 🎯 From SAP Finance Execution to AI-Powered Optimization
 
-With 5+ years of experience managing SAP-based operations in Accounts Payable, HR, and vendor reconciliation (DXC Technology, IQ-EQ), I’ve seen how inefficient workflows, repetitive tasks, and poor data visibility hold companies back.
+With 5+ years in SAP-driven Accounts Payable, vendor lifecycle management, and shared services operations (DXC Technology, IQ-EQ), I’ve seen how slow, manual workflows block real business value.
 
-That’s why I transitioned from **operating** the process — to **improving** it with automation, analytics, and explainability.
+Now, I design AI & BI solutions that:
 
-🛠 Now I Design Intelligent Tools That:
+- 💸 Automate repetitive tasks (invoice processing, vendor check, exception handling)
+- 🔍 Predict risks before they hit — late payments, compliance gaps, bottlenecks
+- 📊 Generate dashboards aligned with finance KPIs and decision-maker needs
 
-✅ Automate routine and repetitive workflows across finance and operations
+---
 
-✅ Improve decision accuracy through real-time insights and risk prediction
+## 💼 Business-Focused Project Portfolio
 
-✅ Align technical solutions with key business KPIs and strategic goals
-
-✅ Build robust dashboards and machine learning models ready for production or advanced analysis
-
-✅ Deliver impact where it matters: cash flow optimization, operational efficiency, and compliance visibility
-
-## 💼 Featured Projects
-
-🧾 Advanced Analytics for Invoice Payment Risk
-💰 Use Case: Detect and act on late payment risk before damage occurs
-
-🏭 SAP-like Shared Services data + ML + SHAP + Power BI
-
+### 🧾 Advanced Analytics for Invoice Payment Risk  
+💰 **Business Case**: Proactively detect late payment risk and save up to **€480K/year** in cash flow  
+🏭 SAP-like simulation + XGBoost + SHAP + Power BI dashboard  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/Advanced%20Analytics%20for%20Invoice%20Payment%20Risk)
- 
-📊 Real Estate Forecasting (Regression)  
 
-🏢 Use Case**: Support timing of property deals for real estate investors
+---
 
-🔍 Predictive modeling + SQL + Power BI + KPI analysis
-
+### 📊 Real Estate Forecasting (Regression)  
+🏢 **Business Case**: Predict deal timing and support portfolio decisions for real estate investment  
+🧠 Elastic Net + SQL KPIs + Power BI reporting  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/un%20modello%20di%20previsione%20del%20mercato%20immobiliare)
 
-🍍 Fruit Classification (ML)  
+---
 
-🍇 Use Case**: Reduce QA labeling errors in import/export
-
-📦 Computer vision pipeline + business-focused model explainability
-
+### 🍍 Fruit Classification – Ensemble ML  
+🍇 **Business Case**: Reduce labeling errors in agricultural logistics and improve QA  
+📦 CNN + Tree-based models + domain-oriented explainability  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/classificazione%20frutti%20esotici)
 
-🧪 Generative AI – Power Plant Fault Simulation 
+---
 
-⚡ Use Case**: Simulate rare faults for turbine safety training
-
-🧠 Vision GANs + scenario-based synthetic data generation
-
+### 🧪 Generative AI – Power Plant Fault Simulation  
+⚡ **Business Case**: Simulate rare faults for safety training and predictive maintenance  
+🎛️ Vision GANs + synthetic datasets for turbine inspection  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Generative%20AI/Data%20agumentation%20for%20power%20plant%20safety)
 
-🔍 Explainable AI for Compliance  
+---
 
-🏦 Use Case**: Make AI decisions audit-ready
-
-📑 Focus on SHAP, LIME, and model transparency for regulators
-
+### 🔍 Explainable AI for Compliance  
+🏦 **Business Case**: Make AI decisions audit-ready and transparent for regulators  
+📑 SHAP + LIME on financial decisioning models  
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Explainable%20AI)
 
+---
 
+## 🛠️ Technical Stack & Core Skills
+
+- **Languages & Tools**: Python, SQL, Power BI, SAP (user), Streamlit  
+- **ML & AI**: scikit-learn, XGBoost, SHAP, SMOTE, GANs, Explainable AI  
+- **Use Cases**: Finance automation, predictive analytics, dashboarding, risk detection  
+- **Methodology**: Clean code, business-readable output, impact-first mindset
 
 ---
 
-🛠️ Skills That Matter
+## 📩 Let’s Build Smarter Systems
 
-Python, Pandas, scikit-learn, XGBoost, SHAP
+Looking for someone who knows **both the pain of manual finance operations** and how to **solve it with tech**?
 
-SQL, Power BI, SAP (user level), financial operations
-
-Business-Impact ML: classification, regression, simulation
-
-Clear documentation, readable code, dashboards, explainability 
-
----
-
-📩 **Looking for someone who understands both the process and the solution?**  
-Let’s build smarter systems that make your business faster, simpler, and more effective.
+Let’s talk.  
+🔗 [LinkedIn](https://www.linkedin.com/in/federico-petillo-822b3644/)  
+📧 federico.petillo@gmail.com  
