@@ -1,135 +1,112 @@
-📊 Advanced Analytics for Invoice Payment Risk
+# 📊 Advanced Analytics for Invoice Payment Risk
 
 Proactive Invoice Monitoring with Machine Learning, SHAP & SAP-like Simulation
 
 Predict which vendor invoices are at risk of late payment and prioritize action before financial damage occurs.
 
-💼 Executive Summary
+---
 
-Companies lose substantial amounts monthly due to late invoice payments. This project simulates a real-world Shared Services Center environment using SAP-like invoice fields (e.g., gl_code, company_code, vendor_region, invoice_block_reason) and develops a machine learning-based risk detection system.
+## 💼 Executive Summary
 
-Leveraging predictive analytics, explainable AI (SHAP), and Power BI reporting, it enables proactive intervention and cash flow optimization — detecting payment risks before due dates.
+Companies lose substantial amounts monthly due to late invoice payments.  
+This project simulates a real-world Shared Services Center environment using SAP-like invoice fields (e.g., `gl_code`, `company_code`, `vendor_region`, `invoice_block_reason`) and develops a machine learning-based risk detection system.
 
-🔍 Business Scenario
+Leveraging predictive analytics, explainable AI (SHAP), and Power BI reporting, it enables proactive intervention and cash flow optimization — detecting payment risks **before due dates**.
 
-🧾 Company Profile
+---
 
-Mid-sized enterprise with 5 business units processing 50,000+ invoices annually
+## 🔍 Business Scenario
 
-AP team of 6 managing SAP workflows across multiple vendor regions
+### 🧾 Company Profile  
+- Mid-sized enterprise with 5 BUs processing 50,000+ invoices/year  
+- AP team of 6 managing SAP workflows across multiple vendor regions  
+- Common issues: blocked invoices, missing POs, delayed vendor responses  
 
-Common challenges: blocked invoices, missing POs, delayed vendor responses
+### 🚨 Problem  
+- ~20% of invoices paid late  
+- Lost early payment discounts and penalties ≈ **€1.2M/year**  
+- Manual reviews = slow, reactive, error-prone  
 
-🚨 Problem
+---
 
-Approximately 20% of invoices are paid late
+## ✅ Solution  
+> **Machine learning model** to predict invoice payment risk and assign priority actions  
+> Sample output:
 
-Lost early payment discounts and penalties totaling around €1.2M/year
+| invoice_id | vendor_name     | risk_score | priority_action         |
+|------------|------------------|------------|--------------------------|
+| 145        | Vendor IT S.p.A   | 0.82       | Immediate Reminder       |
+| 288        | Office Srl        | 0.77       | Monitor – Response Delay |
+| 391        | General Maint.    | 0.35       | Low Risk – No Action     |
 
-Manual invoice reviews are time-consuming and lack clear risk visibility
+---
 
-✅ Solution
+## 💰 Simulated ROI – Business Impact
 
-This project builds a machine learning classifier to flag at-risk invoices before the due date and assign a priority_action. Sample output:
+- 50,000 invoices/year × 20% late = **10,000 at risk**  
+- If 12% corrected → 6,000 timely payments  
+- Average saving/invoice = **€80** (discounts + penalties + time)  
+### 🟢 **€480,000/year recovered** in working capital & efficiency  
 
-invoice_id	vendor_name	risk_score	priority_action
-145	Vendor IT S.p.A	0.82	Immediate Reminder
-288	Office Srl	0.77	Monitor – Response Delay
-391	General Maint.	0.35	Low Risk – No Action
+---
 
-💰 Estimated ROI – Simulation
+## 🔧 Technical Features
 
-📊 Annual Impact:
+- ✅ SAP-like Fields: `gl_code`, `payment_term`, `invoice_block_reason`, `vendor_region`  
+- 📈 Modeling: XGBoost + Random Forest, SMOTE, Stratified K-Fold  
+- 🧠 Explainability: SHAP plots (`shap_summary_xgb.png`, `shap_summary_rf.png`)  
+- 📊 **Power BI Dashboard**: vendor risk KPIs, exposure heatmaps, intervention alerts  
+- 🔁 Retraining logic included (`if new_data.csv → retrain()`)  
+- 🛠 Output: `alerts.csv`, `dashboard.pbix`, SHAP visuals
 
-50,000 invoices/year × 20% late = 10,000 at risk
+---
 
-If 12% of these are corrected → 6,000 timely payments
+## 📊 Dashboard Preview (Power BI)
 
-Average saving per invoice = €80 (discounts, penalties, workload)
+<img src="./invoice_dashboard_preview.png" width="800"/>
 
-💸 €480,000/year recovered (improved cash flow + avoided penalties)
+> Real-time visibility into vendor payment risk, exposure by region, GL account, and priority actions.  
+Tailored for AP managers, controllers, and CFOs.
 
-🔧 Features & Pipeline
+### 📥 Download the full `.pbix` dashboard: [Invoice_Risk_Dashboard.pbix](./Invoice_Risk_Dashboard.pbix)
 
-✅ SAP-like Fields: gl_code, company_code, vendor_region, invoice_block_reason, payment_term
+---
 
-📈 Modeling: Random Forest & XGBoost with SMOTE balancing and Stratified K-Fold validation
+## 🧠 Workflow
 
-🧠 Explainability: SHAP summary plots for transparent model interpretation
+1. 🧾 **Data Simulation** – 1,000+ invoices with SAP-style features  
+2. ⚙️ **Feature Engineering** – urgency, overdue flag, vendor history  
+3. 🧠 **Model Training** – SMOTE balancing, cross-validation  
+4. 📈 **Explainability** – SHAP plots for model transparency  
+5. 📤 **Outputs** – risk scores, `alerts.csv`, dashboard  
+6. 🔁 **Retraining Block** – continuous learning enabled  
 
-📊 Power BI Dashboard: Vendor risk KPIs, regional views, and actionable alert tracking
+---
 
-🔁 Retraining Logic: Supports auto-retrain when new_data.csv is provided
+## 🔗 Integration Options
 
-🛠️ Deployment-ready Outputs: CSV files with alerts and KPIs for operational use
+- Push alerts to ERP / ServiceNow  
+- Embed dashboard in Power BI service  
+- Automate retraining via GitHub Actions  
+- (Planned) LLMs for OCR invoice ingestion  
+- (Planned) SAP BTP + Esker integration  
 
-🧠 Workflow
+---
 
-Data Simulation of 1,000+ invoices with realistic SAP-like fields
+## 📌 Summary for Decision Makers
 
-Feature Engineering including urgency scores, overdue flags, and vendor risk history
+If you are a CFO, Controller or Finance Ops Lead, this project enables:
 
-Model Training using SMOTE for class balance and cross-validation for robustness
+✔️ Early warning system for at-risk invoices  
+✔️ Estimated savings: **€480K/year**  
+✔️ ERP-ready outputs (CSV, dashboard)  
+✔️ Seamless adoption in Shared Services  
+✔️ Deployable & scalable with retraining logic
 
-Explainability with SHAP for both Random Forest and XGBoost
+---
 
-Output Generation: Risk scores, priority actions, and dashboards in CSV format
+## 📬 Let’s Talk
 
-Retraining Block for continuous learning (if new_data: retrain())
-
-📊 Dashboard Preview (Power BI)
-
-Interactive visualization of invoice risk by vendor, region, GL account, and exposure — tailored for AP managers and finance controllers in invoice_Dashboard.pbix.
-
-🧠 SQL Integration 
-
-Although the dashboard was developed using direct CSV import for flexibility, It was also designed a simulated SQL schema to support future deployment in a production environment.
-
-
-🛠 Deployment & Integration
-
-📥 Input
-invoices_enhanced.csv — All SAP-like invoice features and labels
-new_data.csv — Optional, for incremental retraining
-
-📤 Output
-
-alerts.csv for prioritized action tracking
-
-SHAP explanation plots (shap_summary_rf.png, shap_summary_xgb.png)
-
-Power BI dashboard files (.pbix or images)
-
-🧩 Integration Options
-
-Upload alerts to ERP/ServiceNow for workflow automation
-
-Embed Power BI dashboards in finance portals
-
-Automate retraining via cron or GitHub Actions
-
-📌 Summary for Business
-
-If you are a CFO or Finance Operations Lead, this project offers:
-
-✔️ Early visibility on invoice payment risks
-
-✔️ Prioritized intervention lists to minimize penalties
-
-✔️ Projected savings of approximately €480K annually for mid-sized organizations
-
-✔️ Seamless integration with existing ERP and BI tools
-
-✔️ Scalable and production-ready analytic solution
-
-🤖 Future Enhancements
-
-Incorporate LLM-powered invoice data extraction (PDFs/OCR)
-
-Integrate with SAP BTP and Esker APIs for end-to-end automation
-
-Develop Streamlit or Gradio interfaces for operational use
-
-Expand model ensembles and cost-aware learning
-
-Transition to real-world data and continuous deployment
+💼 Interested in applying this in your SAP/AP environment?  
+📩 [Connect with me on LinkedIn](https://www.linkedin.com/in/federico-petillo)  
+🔗 [Explore more business-oriented projects on my GitHub](https://github.com/xantes88/Portfolio)
