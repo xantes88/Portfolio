@@ -65,7 +65,7 @@ Leveraging predictive analytics, explainable AI (SHAP), and Power BI reporting, 
 
 ![Dashboard Preview](https://github.com/xantes88/Portfolio/raw/main/Progetti%20Machine%20Learning/Advanced%20Analytics%20for%20Invoice%20Payment%20Risk/invoice_dashboard_preview.png)
 
-> Real-time visibility into vendor payment risk, exposure by region, GL account, and priority actions.  
+> Real-time visibility into vendor payment risk, GL account, and priority actions.  
 Tailored for AP managers, controllers, and CFOs.
 
 ### 📥 Download the full `.pbix` dashboard: [Invoice_Risk_Dashboard.pbix](./Invoice_Risk_Dashboard.pbix)
