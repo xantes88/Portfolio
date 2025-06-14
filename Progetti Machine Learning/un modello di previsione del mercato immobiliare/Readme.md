@@ -1,67 +1,91 @@
-🏘️ Real Estate Price Prediction with Regularized Regression
-A complete regression system using Ridge, Lasso, and Elastic Net models to predict real estate prices based on structural and categorical features. The solution includes feature engineering, robust validation, and full reporting via SQL and Power BI.
+# 🏘️ Real Estate Price Prediction with Regularized Regression
 
-🏢 Business Use Case
-Developed for a real estate analytics firm managing valuation workflows across 5,000+ properties in metropolitan markets:
+A complete regression system using **Ridge, Lasso, and Elastic Net** to predict real estate prices based on structural and categorical features. Includes **feature engineering**, **robust validation**, and full reporting via **SQL and Power BI**.
 
-✅ Supports internal pricing recommendations before listings go live
+---
 
-✅ Enables CRM integration for agents to provide pre-visit quotes
+## 🏢 Business Use Case
 
-✅ Assists project planners during early-stage development phases
+Developed for a **real estate analytics firm** managing valuation workflows across 5,000+ metropolitan properties:
 
-💸 Business Value Delivered
-💰 €50K/year saved by correcting pre-listing underpricing
+- ✅ Supports **internal pricing** before listings go live  
+- ✅ Enables **CRM integration** for agents to provide quotes pre-visit  
+- ✅ Assists **project planners** during early-stage development
 
-🔍 24% reduction in pricing uncertainty for better negotiation leverage
+---
 
-🕒 300 analyst hours/year saved via automation
+## 💸 Business Value Delivered
 
-📈 62.1% of price variance explained, enabling early, credible forecasts
+| Metric                                | Impact                                         |
+|---------------------------------------|------------------------------------------------|
+| 💰 Cost Savings                        | ~ €50K/year by correcting pre-listing errors   |
+| 🔍 Uncertainty Reduction               | -24% pricing variance for stronger negotiation |
+| 🕒 Time Saved                          | 300 analyst hours/year via automation          |
+| 📈 Predictive Power                    | R² = 0.621 – enabling early, credible forecasts|
 
-📊 Model Performance
-Model	R² (Test)	RMSE (Test)	MAE (Est.)	Non-Zero Coeff.
-Ridge Regression	0.615	€1,394,364	~€820,000	90
-Lasso Regression	0.609	€1,404,576	~€830,000	82
-Elastic Net (best)	0.621	€1,383,832	~€800,000	90
+---
 
-All models trained using 5-fold cross-validation and optimized via RandomizedSearchCV.
+## 📊 Model Performance
 
-📊 Power BI Dashboard
+| Model            | R² (Test) | RMSE (€)   | MAE (€ est.) | Non-Zero Coefficients |
+|------------------|-----------|------------|--------------|------------------------|
+| Ridge Regression | 0.615     | 1,394,364  | ~820,000     | 90                     |
+| Lasso Regression | 0.609     | 1,404,576  | ~830,000     | 82                     |
+| **Elastic Net**  | **0.621** | **1,383,832** | **~800,000** | **90**                 |
 
-Predicted results exported and visualized via Power BI, including:
+All models validated with **5-fold cross-validation** and **RandomizedSearchCV** for optimal regularization tuning.
 
-📍 Scatter Plot: Actual vs Predicted Prices
+---
 
-📌 KPI Cards: Custom measures (e.g. MAE, RMSE) calculated and displayed for quick overview
+## 📊 Power BI Dashboard
 
-Note: Residual Distribution Histogram and R² KPI card were generated in Python during model evaluation, not in Power BI.
+Predicted results exported to **Power BI** for business reporting, including:
 
-🔧 Technical Highlights
-📐 PolynomialFeatures(degree=2) for non-linear interactions
+- 📍 **Scatter Plot**: Actual vs Predicted Prices  
+- 📌 **KPI Cards**: Custom metrics (MAE, RMSE, R², etc.)
 
-🧼 Preprocessing pipeline with one-hot encoding and imputation via ColumnTransformer
+> ⚠️ Note: Residual histograms and R² charts were generated in Python.
 
-🧪 Robust 5-fold CV evaluation
+---
 
-📉 Residual plots and Q-Q plots to validate assumptions (Python)
+## 🔧 Technical Highlights
 
-🔍 Coefficient path plots to assess regularization impact
+- 📐 `PolynomialFeatures(degree=2)` for non-linear feature interaction  
+- 🧼 Preprocessing pipeline with `OneHotEncoder`, `SimpleImputer`, `ColumnTransformer`  
+- 🧪 **5-Fold Cross-Validation** for robust evaluation  
+- 📉 Residual and Q-Q Plots for diagnostic analysis  
+- 🔍 Coefficient path plots for Ridge/Lasso tuning  
+- 🧾 Auto-generated **SQL script** for data pipeline integration
 
-🧾 Auto-generated SQL script for table creation and data insertion
+---
 
-🛠️ Deployment Potential
-🖥️ Deployable as a microservice API for real-time price suggestions
+## 🛠️ Deployment Potential
 
-📱 Integrable with CRM systems used by real estate agencies
+- 🖥️ Deployable as **microservice API** for real-time price recommendations  
+- 📱 Integrable into **CRM systems** used by agencies  
+- 🧠 Adaptable to **loan risk scoring** or **regional simulation** models
 
-🧠 Adaptable for loan risk scoring or regional price simulation tools
+---
 
-📁 Files Included
-File	Description
-elastic_net_kpi.csv	Final predictions with actual prices and errors
-ElasticNet_Predictions_with_KPI.csv	KPI-enhanced prediction dataset
-ElasticNet_Top10_Errori.csv	Top 10 most inaccurate predictions
-elastic_net_kpi.sql	SQL DDL + DML script for database integration
-elastic_net_kpi.pbix	Power BI dashboard (interactive reporting)
+## 📁 Files Included
 
+| File Name                      | Description                                  |
+|-------------------------------|----------------------------------------------|
+| `elastic_net_kpi.csv`         | Final predictions with actuals and error     |
+| `ElasticNet_Predictions_with_KPI.csv` | Dataset with KPIs                        |
+| `ElasticNet_Top10_Errori.csv` | Top 10 worst predictions                     |
+| `elastic_net_kpi.sql`         | SQL script: table creation + data insertion  |
+| `elastic_net_kpi.pbix`        | Power BI dashboard (interactive)             |
+
+---
+
+## 📌 Summary for Stakeholders
+
+✔️ Explains over **62% of price variance**  
+✔️ Combines **ML, SQL, and Power BI** in one workflow  
+✔️ Ready for production or integration into existing systems  
+✔️ Clear, measurable ROI for real estate analytics
+
+---
+
+> Built for data-driven real estate decision-making — empowering sales, finance, and planning with predictive intelligence.
