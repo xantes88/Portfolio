@@ -38,9 +38,6 @@ All models validated with **5-fold cross-validation** and **RandomizedSearchCV**
 ---
 
 
-
----
-
 ## 🔧 Technical Highlights
 
 - 📐 `PolynomialFeatures(degree=2)` for non-linear feature interaction  
