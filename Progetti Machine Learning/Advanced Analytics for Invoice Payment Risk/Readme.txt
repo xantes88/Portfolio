@@ -79,8 +79,7 @@ Retraining Block for continuous learning (if new_data: retrain())
 
 📊 Dashboard Preview (Power BI)
 
-
-Interactive visualization of invoice risk by vendor, region, GL account, and exposure — tailored for AP managers and finance controllers.
+Interactive visualization of invoice risk by vendor, region, GL account, and exposure — tailored for AP managers and finance controllers in invoice_Dashboard.pbix.
 
 🛠 Deployment & Integration
 
