@@ -103,10 +103,3 @@ If you are a CFO, Controller or Finance Ops Lead, this project enables:
 ✔️ Seamless adoption in Shared Services  
 ✔️ Deployable & scalable with retraining logic
 
----
-
-## 📬 Let’s Talk
-
-💼 Interested in applying this in your SAP/AP environment?  
-📩 [Connect with me on LinkedIn](https://www.linkedin.com/in/federico-petillo)  
-🔗 [Explore more business-oriented projects on my GitHub](https://github.com/xantes88/Portfolio)
