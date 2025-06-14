@@ -57,14 +57,10 @@ All models validated with **5-fold cross-validation** and **RandomizedSearchCV**
 
 ---
 
+📌 Summary for Stakeholders
+✔️ Explains over 62% of price variance
+✔️ Combines ML, SQL, and data-driven pricing logic
+✔️ Ready for integration into internal BI or CRM systems
+✔️ Clear, measurable ROI from predictive automation
 
-## 📌 Summary for Stakeholders
-
-✔️ Explains over **62% of price variance**  
-✔️ Combines **ML, SQL, and Power BI** in one workflow  
-✔️ Ready for production or integration into existing systems  
-✔️ Clear, measurable ROI for real estate analytics
-
----
-
-> Built for data-driven real estate decision-making — empowering sales, finance, and planning with predictive intelligence.
+Built for accurate and scalable property valuation — enabling better decisions in sales, finance, and project planning.
