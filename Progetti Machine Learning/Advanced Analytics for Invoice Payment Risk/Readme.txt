@@ -63,7 +63,7 @@ Leveraging predictive analytics, explainable AI (SHAP), and Power BI reporting, 
 
 ## 📊 Dashboard Preview (Power BI)
 
-<img src="./invoice_dashboard_preview.png" width="800"/>
+![Dashboard Preview](invoice_dashboard_preview.png)
 
 > Real-time visibility into vendor payment risk, exposure by region, GL account, and priority actions.  
 Tailored for AP managers, controllers, and CFOs.
