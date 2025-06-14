@@ -1,0 +1,6 @@
+vendor_name,avg_due_days,late_payment_rate,total_amount,avg_risk_score
+Catering Group,9.76,64.38,5248758,0.71
+General Maint.,10.39,63.56,4874616,0.69
+Office Srl,9.96,64.71,5104009,0.71
+Tech Solutions,9.54,64.52,5168022,0.7
+Vendor IT,9.91,63.56,5177798,0.69
