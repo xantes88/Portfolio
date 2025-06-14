@@ -23,7 +23,7 @@ Now, I design AI & BI solutions that:
 
 ### 📊 Real Estate Forecasting (Regression)  
 🏢 **Business Case**: Predict deal timing and support portfolio decisions for real estate investment  
-🧠 Elastic Net + Power BI reporting  
+🧠 Elastic Net 
 🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/un%20modello%20di%20previsione%20del%20mercato%20immobiliare)
 
 ---
