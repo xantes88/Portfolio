@@ -54,4 +54,5 @@ All models validated using **5-fold cross-validation** and optimized with **Rand
 ✔️ Ready for integration into internal BI or CRM systems  
 ✔️ Clear, measurable ROI from predictive automation
 
-> *Built for accurate and scalable property valuation — enabling better decisions in sales, finance, and project planning.*
+> *Built for accurate and scalable property valuation — enabling better decisions in sales, finance, and project planning.*                       
+> 🧪 *Simulated use case built with synthetic/public data.*
