@@ -81,6 +81,11 @@ Retraining Block for continuous learning (if new_data: retrain())
 
 Interactive visualization of invoice risk by vendor, region, GL account, and exposure — tailored for AP managers and finance controllers in invoice_Dashboard.pbix.
 
+🧠 SQL Integration 
+
+Although the dashboard was developed using direct CSV import for flexibility, It was also designed a simulated SQL schema to support future deployment in a production environment.
+
+
 🛠 Deployment & Integration
 
 📥 Input
