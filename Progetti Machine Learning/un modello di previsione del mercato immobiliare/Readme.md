@@ -57,10 +57,10 @@ All models validated with **5-fold cross-validation** and **RandomizedSearchCV**
 
 ---
 
-📌 Summary for Stakeholders
+## 📌 Summary for Stakeholders📌 Summary for Stakeholders
 ✔️ Explains over 62% of price variance
 ✔️ Combines ML, SQL, and data-driven pricing logic
 ✔️ Ready for integration into internal BI or CRM systems
 ✔️ Clear, measurable ROI from predictive automation
 
-Built for accurate and scalable property valuation — enabling better decisions in sales, finance, and project planning.
+> *Built for accurate and scalable property valuation — enabling better decisions in sales, finance, and project planning.*
