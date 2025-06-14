@@ -35,13 +35,6 @@ Now, I design AI & BI solutions that:
 
 ---
 
-### 🧪 Generative AI – Power Plant Fault Simulation  
-⚡ **Business Case**: Simulate rare faults for safety training and predictive maintenance  
-🎛️ Vision GANs + synthetic datasets for turbine inspection  
-🔗 [View Project](https://github.com/xantes88/Portfolio/tree/main/Generative%20AI/Data%20agumentation%20for%20power%20plant%20safety)
-
----
-
 ### 🔍 Explainable AI for Compliance  
 🏦 **Business Case**: Make AI decisions audit-ready and transparent for regulators  
 📑 SHAP + LIME on financial decisioning models  
