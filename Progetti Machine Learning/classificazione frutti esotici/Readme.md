@@ -14,7 +14,7 @@ This system uses ML to simulate a consistent and automated classification proces
 
 ---
 
-## 💰 Business Value (Simulated)
+## 💰 Business Value 
 
 ✅ **~€20K/year saved** by catching misclassifications before shipment (based on 1% error reduction across 2M units)  
 ✅ Sorting **precision improved to 88.7%**, especially on visually similar classes  
