@@ -57,16 +57,6 @@ All models validated with **5-fold cross-validation** and **RandomizedSearchCV**
 
 ---
 
-## 📁 Files Included
-
-| File Name                      | Description                                  |
-|-------------------------------|----------------------------------------------|
-| `elastic_net_kpi.csv`         | Final predictions with actuals and error     |
-| `ElasticNet_Predictions_with_KPI.csv` | Dataset with KPIs                        |
-| `elastic_net_kpi.sql`         | SQL script: table creation + data insertion  |
-
-
----
 
 ## 📌 Summary for Stakeholders
 
