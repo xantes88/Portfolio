@@ -37,14 +37,7 @@ All models validated with **5-fold cross-validation** and **RandomizedSearchCV**
 
 ---
 
-## 📊 Power BI Dashboard
 
-Predicted results exported to **Power BI** for business reporting, including:
-
-- 📍 **Scatter Plot**: Actual vs Predicted Prices  
-- 📌 **KPI Cards**: Custom metrics (MAE, RMSE, R², etc.)
-
-> ⚠️ Note: Residual histograms and R² charts were generated in Python.
 
 ---
 
