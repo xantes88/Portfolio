@@ -63,9 +63,8 @@ All models validated with **5-fold cross-validation** and **RandomizedSearchCV**
 |-------------------------------|----------------------------------------------|
 | `elastic_net_kpi.csv`         | Final predictions with actuals and error     |
 | `ElasticNet_Predictions_with_KPI.csv` | Dataset with KPIs                        |
-| `ElasticNet_Top10_Errori.csv` | Top 10 worst predictions                     |
 | `elastic_net_kpi.sql`         | SQL script: table creation + data insertion  |
-| `elastic_net_kpi.pbix`        | Power BI dashboard (interactive)             |
+
 
 ---
 
