@@ -131,13 +131,13 @@ This prompt evaluation framework can be extended beyond Italian VAT compliance t
 ## 🚀 How to Run
 
 1. Clone this repository.  
-2. Install the required Python package:
-3. pip install openai==0.28
-4. Run the prompt evaluation script or open the Colab notebook.
-5. Enter your OpenAI API key securely when prompted.
-6. Review the generated outputs and automatic relevance scores.
+2. Install the required Python package:  
+   ```bash
+   pip install openai==0.28
 
-```bash
+3. Run the prompt evaluation script or open the Colab notebook.
+4. Enter your OpenAI API key securely when prompted.
+5. Review the generated outputs and automatic relevance scores.
 
 📘 Tech Stack
 
