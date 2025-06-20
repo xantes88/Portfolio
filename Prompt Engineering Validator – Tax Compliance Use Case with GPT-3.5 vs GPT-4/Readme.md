@@ -94,12 +94,36 @@ Record Keeping: The company must keep detailed records of all taxable transactio
 
 ---
 
+## 🌟 Expanded Use Cases & Future Developments
+
+### Expanded Use Cases
+
+This prompt evaluation framework can be extended beyond Italian VAT compliance to various domains where accuracy, compliance, and relevancy of LLM outputs are critical, such as:
+
+- **Financial Reporting & Forecasting:** Automating the generation and validation of financial summaries and forecasts to assist CFOs and finance teams.
+- **Legal Document Analysis:** Supporting contract review and legal compliance checks by assessing the relevance and completeness of AI-generated summaries or clauses.
+- **Regulatory Risk Management:** Continuously evaluating AI outputs for adherence to industry regulations in sectors like banking, healthcare, and insurance.
+- **Customer Support Automation:** Ensuring chatbot or virtual assistant responses align with company policies and provide accurate, compliant information.
+- **Training & Onboarding:** Using prompt evaluation to build reliable AI tutors that provide consistent, accurate training materials in complex subjects.
+
+### Potential Future Developments
+
+To enhance the robustness and business impact of this project, several developments are planned:
+
+- **Multi-language Support:** Extending prompt evaluation to support multiple languages, broadening applicability across global markets.
+- **Advanced Semantic Scoring:** Integrating NLP techniques like semantic similarity and entailment checks to complement keyword matching.
+- **User Interface Development:** Building an interactive dashboard for non-technical users to submit prompts, view outputs, and get automatic evaluations.
+- **Continuous Learning Pipelines:** Creating feedback loops where user validation improves prompt design and model selection over time.
+- **Integration with Enterprise Systems:** Connecting this framework with ERP or compliance software (e.g., SAP, Oracle) for end-to-end automation.
+- **Explainability Modules:** Adding explainable AI components to highlight why certain outputs scored higher or lower, increasing trust and auditability.
+
+---
+
 ## 🚀 How to Run
 
 1. Clone this repository.  
 2. Install the required Python package:  
 ```bash
-
 pip install openai==0.28
 
 Run the prompt evaluation script or open the Colab notebook.
@@ -109,6 +133,7 @@ Enter your OpenAI API key securely when prompted.
 Review the generated outputs and automatic relevance scores.
 
 📘 Tech Stack
+
 Python 3.11+
 
 OpenAI API (GPT-3.5 and GPT-4)
@@ -122,5 +147,6 @@ Compatible with Google Colab and Jupyter Notebooks
 📢 Closing Statement
 
 🧠 Built on a solid foundation of SAP Finance operations experience, now driving AI-powered business automation to unlock new efficiency and innovation.
+
 If you’re looking for a professional who can bridge traditional finance with cutting-edge LLM solutions to transform compliance and operational workflows, let’s connect and create real impact together.
 
