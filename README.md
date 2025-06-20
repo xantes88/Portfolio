@@ -1,52 +1,76 @@
-# 👤 Federico Petillo — AI-Driven Finance Automation Specialist
-
-## 🎯 From SAP Finance Execution to AI-Powered Optimization
-
-With 5+ years in SAP-driven Accounts Payable, vendor lifecycle management, and shared services operations (DXC Technology, IQ-EQ), I’ve witnessed how slow, manual workflows block real business value.
-
-Now, I design AI & BI solutions that:
-
-- 💸 Automate repetitive tasks like invoice processing, vendor checks, and exception handling  
-- 🔍 Predict risks early — late payments, compliance gaps, operational bottlenecks  
-- 📊 Generate dashboards aligned with finance KPIs and decision-maker needs  
-
-These projects are simulations built on realistic data and scenarios, demonstrating the potential of AI to improve cash flow management, reduce errors, and save thousands of labor hours annually.
+# 👤 Federico Petillo — AI-Driven Finance Automation Specialist  
+🎯 From SAP Execution to Predictive Control | Python • Power BI • Prompt Engineering
 
 ---
 
-## 💼 Selected Simulated Projects
+## 🚀 Executive Summary  
 
-### 🤖 Prompt Engineering Validator  
-Benchmarking GPT-3.5 vs GPT-4 on Italian tax compliance prompts, with automated relevance scoring.  
-🔗 [Explore Project](https://github.com/xantes88/Portfolio/tree/main/Prompt%20Engineering%20Validator%20%E2%80%93%20Tax%20Compliance%20Use%20Case%20with%20GPT-3.5%20vs%20GPT-4)
+I’ve spent 5+ years inside SAP-driven Finance Ops (DXC Technology, IQ-EQ), dealing with blocked invoices, vendor escalations, and inefficient workflows.  
+Now I build systems that simulate the next evolution of finance operations: **AI-powered, risk-aware, and KPI-aligned**.
 
-### 🧾 Advanced Analytics for Invoice Payment Risk  
-Simulated SAP-like system forecasting late payments using XGBoost & Power BI dashboards.  
-🔗 [Explore Project](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/Advanced%20Analytics%20for%20Invoice%20Payment%20Risk)
+I bridge the gap between **slow enterprise processes and fast AI solutions** — combining Finance acumen, Process Logic, and full-stack AI development.
 
-### 📊 Real Estate Forecasting  
-Elastic Net regression model to simulate price prediction and deal timing for real estate portfolios.  
-🔗 [Explore Project](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/un%20modello%20di%20previsione%20del%20mercato%20immobiliare)
-
-### 🔍 Explainable AI for Compliance  
-Applying SHAP and LIME for transparent, audit-ready financial decision models.  
-🔗 [Explore Project](https://github.com/xantes88/Portfolio/tree/main/Explainable%20AI)
+My portfolio focuses on high-leverage solutions:
+- 🧠 **Prompt Engineering** for compliance, automation and enterprise LLM use cases  
+- 💸 **Late payment forecasting** and AP process optimization  
+- 📊 **Business dashboards** in Power BI for KPI and risk tracking  
+- 🎨 **Generative AI pipelines** to simulate rare events and boost model robustness  
+- 🔍 **Explainability-first models** for regulated or auditable environments  
 
 ---
 
-## 🛠️ Technical Skills & Methodology
+## 💼 Highlighted Projects  
 
-- **Languages & Tools**: Python, SQL, Power BI, SAP (user), Streamlit  
-- **ML & AI**: scikit-learn, XGBoost, SHAP, SMOTE, GANs, Explainable AI  
-- **Use Cases**: Finance automation, predictive analytics, dashboarding, risk detection  
-- **Approach**: Clean, maintainable code; business-readable outputs; impact-first mindset
+### 🤖 [Prompt Engineering Validator](https://github.com/xantes88/Portfolio/tree/main/Prompt%20Engineering/Prompt%20Evaluation%20GPT%203.5%20vs%204)  
+Simulated benchmark between GPT-3.5 and GPT-4 on Italian tax prompts, with automated scoring and relevance control.  
+📌 GPT-3.5 • GPT-4 • Prompt scoring • Eval metrics
 
 ---
 
-## 📩 Let’s Build Smarter Finance Together
+### 🧾 [Advanced Analytics for Invoice Payment Risk](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/Advanced%20Analytics%20for%20Invoice%20Payment%20Risk)  
+A predictive system mimicking SAP invoice workflows, using XGBoost to flag late payments and Power BI to visualize business risk.  
+🏷️ *ROI Simulated:* €480K/year savings  
+📌 XGBoost • SHAP • SQL • Power BI • Alert CSV automation
 
-If you want a partner who deeply understands both the pain of manual finance operations and how to solve it with AI-driven tech, let’s connect.
+---
 
-🔗 [LinkedIn](https://www.linkedin.com/in/federico-petillo-822b3644/)  
-📧 federico.petillo@gmail.com
+### 🔍 [Explainable AI for Banking Compliance](https://github.com/xantes88/Portfolio/tree/main/Explainable%20AI)  
+Built a CNN + XAI pipeline to simulate visual document audits (cheques, IDs) in finance.  
+Interpreted predictions with GradCAM, LIME, and Integrated Gradients.  
+📌 PyTorch • CNN • LIME • GradCAM • Integrated Gradients
+
+---
+
+### 🎨 [Generative AI for Industrial Safety](https://github.com/xantes88/Portfolio/tree/main/Generative%20AI/Data%20agumentation%20for%20power%20plant%20safety)  
+Created a multimodal data augmentation system using **Stable Diffusion + GPT-2** to simulate high-risk industrial events and annotate them automatically.  
+Improved classification recall by +32% and simulated €150K/year risk mitigation.  
+📌 Stable Diffusion • GPT-2 • ResNet50 • Text2Image • Data augmentation
+
+---
+
+### 📊 [Real Estate Price Forecasting](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/Real%20Estate%20Price%20Prediction)  
+Used Elastic Net regression on cleaned and feature-engineered real estate data to simulate price prediction and deal timing.  
+🏷️ *Impact Simulated:* -24% pricing uncertainty, +300h/year saved  
+📌 ElasticNet • SQL • Power BI • Feature Selection
+
+---
+
+## 🛠️ Skills Snapshot
+
+**Languages & Tools:** Python, SQL, Power BI, Streamlit, SAP (user)  
+**AI/ML:** XGBoost, SHAP, LIME, GradCAM, Integrated Gradients, GPT-2, Stable Diffusion, SMOTE  
+**Domains:** Finance Ops, Risk Detection, Prompt Engineering, Compliance, Dashboarding  
+**Approach:** Fast iteration • Business-oriented outputs • Explainable by design
+
+---
+
+## 📩 Let’s Build Smarter Finance, Faster  
+
+I’m actively looking for a role where I can turn slow, manual Finance Ops into predictive, explainable and automated systems — using the best of AI and business logic.
+
+If you need someone who understands **both SAP and GPT**, **invoices and LLMs**,  
+we should talk.
+
+📧 federico.petillo@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/federicopetillo) 
 
