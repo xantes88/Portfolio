@@ -152,17 +152,12 @@ Keyword-based automated scoring
 Compatible with Google Colab and Jupyter Notebooks
 
 📢 Closing Statement
+
 🧠 Built on a solid foundation of SAP Finance operations experience, now driving AI-powered business automation to unlock new efficiency and innovation.
 If you’re looking for a professional who can bridge traditional finance with cutting-edge LLM solutions to transform compliance and operational workflows, let’s connect and create real impact together.
 
 📞 Contact & Next Steps
 I’m actively seeking challenging opportunities in AI-driven business automation and finance operations.
-
-🔗 LinkedIn Profile
-
-🔗 GitHub Portfolio
-
-📧 Email: federico.petillo@email.com
 
 Feel free to reach out for:
 
