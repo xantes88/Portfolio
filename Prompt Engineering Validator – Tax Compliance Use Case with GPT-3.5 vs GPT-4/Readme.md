@@ -112,18 +112,32 @@ This prompt evaluation framework can be extended beyond Italian VAT compliance t
 
 ---
 
+## 🔗 Related Projects
+
+- **Advanced Analytics for Invoice Payment Risk**  
+  [GitHub Repository](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/Advanced%20Analytics%20for%20Invoice%20Payment%20Risk)  
+  A machine learning project forecasting invoice payment delays to optimize cash flow and reduce operational risks.
+
+- **Explainable AI for Banking Compliance**  
+  [GitHub Repository](https://github.com/xantes88/Portfolio/tree/main/Explainable%20AI)  
+  Implementation of explainable neural networks to increase transparency and trustworthiness of AI decisions in financial regulation.
+
+- **Generative AI - Data Augmentation for Power Plant Safety**  
+  [GitHub Repository](https://github.com/xantes88/Portfolio/tree/main/Generative%20AI/Data%20agumentation%20for%20power%20plant%20safety)  
+  Synthetic data generation pipeline improving classification accuracy in industrial safety monitoring using generative models.
+
+---
+
 ## 🚀 How to Run
 
-1. Clone this repository.
-2. Install the required Python package:  
+1. Clone this repository.  
+2. Install the required Python package:
+3. pip install openai==0.28
+4. Run the prompt evaluation script or open the Colab notebook.
+5. Enter your OpenAI API key securely when prompted.
+6. Review the generated outputs and automatic relevance scores.
 
-pip install openai==0.28
-
-3. Run the prompt evaluation script or open the Colab notebook.
-
-4. Enter your OpenAI API key securely when prompted.
-
-5. Review the generated outputs and automatic relevance scores.
+```bash
 
 📘 Tech Stack
 
