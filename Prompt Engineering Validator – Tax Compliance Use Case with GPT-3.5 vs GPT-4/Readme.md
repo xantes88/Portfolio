@@ -126,11 +126,11 @@ To enhance the robustness and business impact of this project, several developme
 ```bash
 pip install openai==0.28
 
-Run the prompt evaluation script or open the Colab notebook.
+3. Run the prompt evaluation script or open the Colab notebook.
 
-Enter your OpenAI API key securely when prompted.
+4. Enter your OpenAI API key securely when prompted.
 
-Review the generated outputs and automatic relevance scores.
+5. Review the generated outputs and automatic relevance scores.
 
 📘 Tech Stack
 
