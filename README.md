@@ -21,7 +21,7 @@ My portfolio focuses on high-leverage solutions:
 
 ## 💼 Highlighted Projects  
 
-### 🤖 [Prompt Engineering Validator](https://github.com/xantes88/Portfolio/tree/main/Prompt%20Engineering/Prompt%20Evaluation%20GPT%203.5%20vs%204)  
+### 🤖 [Prompt Engineering Validator](https://github.com/xantes88/Portfolio/tree/main/Prompt%20Engineering%20Validator%20%E2%80%93%20Tax%20Compliance%20Use%20Case%20with%20GPT-3.5%20vs%20GPT-4).  
 Simulated benchmark between GPT-3.5 and GPT-4 on Italian tax prompts, with automated scoring and relevance control.  
 📌 GPT-3.5 • GPT-4 • Prompt scoring • Eval metrics
 
