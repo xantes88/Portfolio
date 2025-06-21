@@ -51,7 +51,7 @@ Improved classification recall by +32% and simulated €150K/year risk mitigatio
 ### 📊 [Real Estate Price Forecasting](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/Real%20Estate%20Price%20Prediction)  
 Used Elastic Net regression on cleaned and feature-engineered real estate data to simulate price prediction and deal timing.  
 🏷️ *Impact Simulated:* -24% pricing uncertainty, +300h/year saved  
-📌 ElasticNet • SQL • Power BI • Feature Selection
+📌 ElasticNet • SQL • Feature Selection
 
 ---
 
