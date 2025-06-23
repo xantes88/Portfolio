@@ -72,5 +72,5 @@ If you need someone who understands **both SAP and GPT**, **invoices and LLMs**,
 we should talk.
 
 📧 federico.petillo@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/federicopetillo) 
+🔗 [LinkedIn](https://www.linkedin.com/in/federico-petillo-822b3644) 
 
