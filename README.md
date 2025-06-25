@@ -6,11 +6,13 @@
 ## 🚀 Executive Summary  
 
 I’ve spent 5+ years inside SAP-driven Finance Ops (DXC Technology, IQ-EQ), dealing with blocked invoices, vendor escalations, and inefficient workflows.  
+
 Now I build systems that simulate the next evolution of finance operations: **AI-powered, risk-aware, and KPI-aligned**.
 
 I bridge the gap between **slow enterprise processes and fast AI solutions** — combining Finance acumen, Process Logic, and full-stack AI development.
 
 My portfolio focuses on high-leverage solutions:
+
 - 🧠 **Prompt Engineering** for compliance, automation and enterprise LLM use cases  
 - 💸 **Late payment forecasting** and AP process optimization  
 - 📊 **Business dashboards** in Power BI for KPI and risk tracking  
