@@ -49,10 +49,12 @@ Whether you're a **freelancer**, **startup founder**, or **small business owner*
 
 ```bash
 Contacts in the phonebook:
+
 Name: John   Surname: Doe   Number: 555-1234
 Name: Jane   Surname: Smith Number: 555-5678
 
 💡 Realistic Use Cases
+
 🛍️ Local retailers managing customers or suppliers
 
 📚 Tutors tracking students and guardians
@@ -62,6 +64,7 @@ Name: Jane   Surname: Smith Number: 555-5678
 🔧 Teams prototyping internal tools before CRM adoption
 
 📈 Future Enhancements
+
 Area	Suggested Upgrade
 UI/UX	Migrate to Flask or Streamlit for web interface
 Data Storage	Switch to SQLite or TinyDB for better query support
@@ -70,6 +73,7 @@ Security	Add user authentication for shared environments
 Analytics	Log data access and edits for usage insights
 
 🛠️ Tech Stack
+
 Language: Python 3.x
 
 Storage: Local JSON file
@@ -77,6 +81,7 @@ Storage: Local JSON file
 Libraries: json, os, basic file I/O (no external dependencies)
 
 ▶️ Getting Started
+
 bash
 Copia
 Modifica
@@ -88,6 +93,7 @@ cd phone-book-manager
 
 # Step 3: Run the script
 python phonebook.py
+
 ⚠️ Make sure Python 3 is installed. The app will generate Contacts.json on first use if not present.
 
 🧩 From MVP to Micro-CRM
