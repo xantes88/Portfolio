@@ -141,5 +141,5 @@ Developed by **Federico Petillo** — Finance Ops & AI Specialist combining 5+ y
 
 This is a **simulated, educational project** designed for portfolio presentation. Not intended for production use or legal compliance delivery.
 
-> Looking to bring this blend of domain expertise and AI execution into a strategic role — **AI Automation • Prompt Ops • Compliance QA** — full remote or hybrid.
+
 
