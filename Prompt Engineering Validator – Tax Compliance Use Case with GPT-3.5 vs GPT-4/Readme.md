@@ -9,11 +9,11 @@ _Built for high-stakes finance workflows by a specialist in SAP AP, automation, 
 ## 🧠 Executive Summary
 
 Many companies struggle to validate the **regulatory accuracy** and **business relevance** of LLM-generated content.  
-This project simulates how a **Prompt Engineer** can build an evaluation pipeline to automatically score, compare, and improve GPT outputs — using a real-world example: **VAT compliance for Italian SRLs (limited liability companies)**.
+This project simulates how a **Prompt QA Specialist** can build an evaluation pipeline to automatically score, compare, and improve GPT outputs — using a real-world example: **VAT compliance for Italian SRLs (limited liability companies)**.
 
-By combining GPT-3.5 and GPT-4 with a structured keyword-scoring system, the tool benchmarks performance across legal, fiscal, and linguistic dimensions. It reflects a **credible Prompt QA framework** aligned with real-world business impact.
+By combining GPT-3.5 and GPT-4 with a structured keyword-scoring system, this tool benchmarks performance across legal, fiscal, and linguistic dimensions. It reflects a **credible, deployable Prompt QA framework** aligned with business outcomes in compliance, finance, and ERP automation.
 
-> 📌 This is a personal, simulated project for portfolio purposes. Not affiliated with any client or production system.
+> 📌 Simulated for portfolio purposes. Not affiliated with any client or production system.
 
 ---
 
@@ -51,20 +51,22 @@ You are an Italian tax expert. Briefly list the main VAT obligations for an SRL 
 ## 📤 GPT Output Comparison
 
 ### 🔹 GPT-3.5-Turbo
-- ✅ Avg Score: **95.9%**
+- ✅ Avg Score: **89.8%**
 - ⏱ Avg Time: 4.2s
-- ✅ 100% Legal Structure (5-point)
-- 📄 High keyword density (7–9/9)
-- 📈 Relevance: **High**
+- 📊 Score Range: 86.4% – 94.5%
+- 🧠 100% Legal Structure (5-point)
+- 💬 Proper Italian Language: 100%
+- 📄 Keyword Accuracy: Strong technical terms, moderate compliance/legal terms
 
 ### 🔷 GPT-4
-- Avg Score: **86.8%**
-- Avg Time: 47s
-- ✅ 100% Legal Structure (5-point)
-- 📄 Higher verbosity, lower keyword hit
-- 📈 Relevance: **High**
+- ✅ Avg Score: **87.3%**
+- ⏱ Avg Time: 47s
+- 📊 Score Range: 85.4% – 90.8%
+- 🧠 100% Legal Structure (5-point)
+- 💬 Proper Italian Language: 100%
+- 📄 Higher legal references but lower keyword precision overall
 
-> GPT-3.5 outperformed GPT-4 on keyword scoring while GPT-4 delivered more detailed legal phrasing.
+> 📌 GPT-3.5 consistently outperformed GPT-4 on keyword scoring (especially compliance terms), while GPT-4 excelled in legal depth and monetary precision.
 
 ---
 
@@ -115,15 +117,16 @@ You are an Italian tax expert. Briefly list the main VAT obligations for an SRL 
 
 ## 👤 Author & Expertise
 
-Developed by **Federico Petillo** — Finance Ops & AI Specialist combining 5+ years of SAP-driven Finance Ops with real-world AI deployment for automation and compliance QA.
+Developed by **Federico Petillo** — Finance Ops & AI Specialist combining 5+ years in SAP-driven Accounts Payable with hands-on AI deployment for automation, risk detection, and prompt evaluation.
 
-- 📌 SAP Accounts Payable optimization
-- 📊 AI for Invoice Risk Detection & Automation
-- 🔍 Prompt Engineering for Finance/Compliance use cases
+- 📌 SAP AP Optimization & Invoice Workflow Efficiency
+- 🤖 AI for Invoice Risk Detection (XGBoost, SHAP, Power BI)
+- 🔍 Prompt QA Systems for Finance and Compliance
+- 🧰 LangChain, GPT API, Python, SQL, ERP scenarios
 
+🔗 [GitHub Portfolio](https://github.com/xantes88)
 
-
-> From SAP to Smart Ops — This project blends prompt engineering with domain expertise to create scalable AI solutions for regulatory environments.
+> From SAP to Smart Ops — This project blends prompt engineering with finance domain expertise to create scalable, high-trust AI automations.
 
 ---
 
