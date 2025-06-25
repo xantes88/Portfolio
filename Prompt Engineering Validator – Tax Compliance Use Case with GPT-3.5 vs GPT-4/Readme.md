@@ -1,162 +1,145 @@
-# 🤖 Prompt Evaluation System for Business Use Cases (GPT-3.5 vs GPT-4)
+# 🤖 Prompt Evaluation System for Italian VAT Compliance
 
-_A simulated AI project benchmarking GPT-3.5 and GPT-4 for tax compliance prompt evaluation with automated relevance scoring._
+_Built for high-stakes finance workflows by a specialist in SAP AP, automation, and AI QA engineering._
+
+**AI Prompt Benchmarking for Tax Compliance — GPT-3.5 vs GPT-4**
 
 ---
 
 ## 🧠 Executive Summary
 
-Many companies struggle to validate the **business relevance** and **regulatory accuracy** of LLM-generated content.  
-This project simulates how a **Prompt Engineer** can build an evaluation pipeline to automatically score, compare, and improve AI-generated outputs — using a real-world example: **VAT compliance for Italian SRLs (limited liability companies)**.
+Many companies struggle to validate the **regulatory accuracy** and **business relevance** of LLM-generated content.  
+This project simulates how a **Prompt Engineer** can build an evaluation pipeline to automatically score, compare, and improve GPT outputs — using a real-world example: **VAT compliance for Italian SRLs (limited liability companies)**.
 
-By combining GPT-3.5 and GPT-4 with a keyword-matching evaluation system, we generate outputs, score them against business-critical keywords, and assess relevance and completeness.
+By combining GPT-3.5 and GPT-4 with a structured keyword-scoring system, the tool benchmarks performance across legal, fiscal, and linguistic dimensions. It reflects a **credible Prompt QA framework** aligned with real-world business impact.
 
-> 📌 **Disclaimer**: This is a personal, simulated project for educational and portfolio use. It is not affiliated with any real client or production environment.
+> 📌 This is a personal, simulated project for portfolio purposes. Not affiliated with any client or production system.
 
 ---
 
 ## 💼 Business Scenario
 
 - **Industry**: Finance / Regulatory / Compliance  
-- **Problem**: Manual compliance tasks are slow, inconsistent, and hard to scale.  
-- **Solution**: Use LLMs to generate structured tax guidance + evaluate outputs automatically.  
-- **Goal**: Build a **prompt evaluation system** to streamline content QA in high-stakes business workflows.
+- **Problem**: Manual compliance documentation is slow, error-prone, and inconsistent  
+- **Solution**: Leverage LLMs to draft and validate structured tax content  
+- **Goal**: Build a scalable **Prompt QA system** for high-stakes workflows (SAP, ERP, Audit)
 
 ---
 
-## ⚙️ Features
+## ⚙️ Key Features
 
-- Prompt execution with both **GPT-3.5** and **GPT-4**
-- Keyword-based **automated scoring system**
-- Detailed output diagnostics: word count, keyword match, relevance level
-- LangChain interface for **production-grade modularity**
-- Fallback logic for GPT-4 access issues
-- Designed for **rapid iteration of prompts and evaluation criteria**
+- 🔁 **Multi-model execution** (GPT-3.5 & GPT-4)
+- 🧠 **Automated scoring** across 5 keyword categories:
+  - Compliance terms  
+  - Legal references  
+  - Accuracy & Precision  
+  - Technical phrasing
+- 📊 **Diagnostic reports** (.CSV, .PNG, .JSON, .MD)
+- 🧰 **LangChain-powered modularity**
+- ⏱️ **Fallback logic + timing benchmark**
 
 ---
 
 ## 🧪 Prompt Example
 
-```
+```text
 You are an Italian tax expert. Briefly list the main VAT obligations for an SRL (limited liability company) under the standard tax regime in 2024. Reply with 5 concise bullet points.
 ```
 
 ---
 
-## 📤 Model Outputs & Evaluation
+## 📤 GPT Output Comparison
 
-### 🔹 GPT-3.5 Output
+### 🔹 GPT-3.5-Turbo
+- ✅ Avg Score: **95.9%**
+- ⏱ Avg Time: 4.2s
+- ✅ 100% Legal Structure (5-point)
+- 📄 High keyword density (7–9/9)
+- 📈 Relevance: **High**
 
-- Register for VAT with the Italian Revenue Agency  
-- Issue VAT invoices for all taxable transactions  
-- File periodic VAT returns and pay any VAT due  
-- Maintain proper VAT accounting records  
-- Comply with VAT rules for intra-EU transactions
+### 🔷 GPT-4
+- Avg Score: **86.8%**
+- Avg Time: 47s
+- ✅ 100% Legal Structure (5-point)
+- 📄 Higher verbosity, lower keyword hit
+- 📈 Relevance: **High**
 
-**Evaluation:**
-- Word count: 52  
-- Keyword match: 3/9  
-- Relevance: ⚠️ Borderline
-
----
-
-### 🔷 GPT-4 Output
-
-1. VAT Registration: The SRL must register for VAT and obtain a VAT number from the Italian Revenue Agency.  
-2. VAT Returns: Regular VAT filings are required (monthly or quarterly depending on turnover).  
-3. VAT Payment: Companies must calculate and pay VAT within the prescribed deadlines.  
-4. VAT Invoicing: For each transaction, a compliant VAT invoice must be issued.  
-5. Record Keeping: All relevant records must be stored for a minimum of 10 years.
-
-**Evaluation:**
-- Word count: 165  
-- Keyword match: 7/9  
-- Relevance: ✅ Sufficient
+> GPT-3.5 outperformed GPT-4 on keyword scoring while GPT-4 delivered more detailed legal phrasing.
 
 ---
 
-## 📊 Impact Simulation & KPIs
+## 📊 KPIs & ROI Simulation
 
-| Metric                     | Manual Process | LLM-Augmented Process |
-|---------------------------|----------------|------------------------|
-| Average Response Time     | 20–30 min      | < 30 sec               |
-| Review Effort             | High           | Low                    |
-| Keyword Accuracy          | N/A            | 90%+                   |
-| Evaluation Speed          | N/A            | 10× faster             |
+| Metric                     | Manual Process | LLM-Augmented |
+|---------------------------|----------------|----------------|
+| Avg Response Time         | 20–30 min      | < 30 sec       |
+| Review Effort             | High           | Low            |
+| Keyword Accuracy          | N/A            | 90%+           |
+| Evaluation Speed          | N/A            | 10× faster     |
 
----
-
-## 🌟 Expanded Business Use Cases
-
-This evaluation pipeline can be extended beyond tax compliance:
-
-- 📈 **Financial Forecasting**: Validate LLM-generated reports for consistency and business logic.  
-- ⚖️ **Legal Review**: Assess completeness and accuracy of AI-generated clauses and contracts.  
-- 🏛 **Regulatory Monitoring**: Score LLM outputs for alignment with industry standards (e.g., banking, energy, pharma).  
-- 💬 **Chatbot QA**: Evaluate the quality and compliance of customer support generated by LLMs.  
-- 📚 **Training Materials**: Ensure LLM tutors generate factually accurate and up-to-date onboarding content.
+> ⚙️ Designed for prompt QA in finance, tax advisory, ERP chatbots, or multilingual compliance support.
 
 ---
 
-## 💰 Simulated Business ROI
+## 💡 Use Case Extensions
 
-| Use Case                          | Estimated Savings      | Strategic Benefit                            |
-|----------------------------------|------------------------|----------------------------------------------|
-| Tax Compliance Automation        | €15,000–25,000/year    | Reduced manual review + higher consistency   |
-| Legal Clause Validation          | €20,000+/year          | Faster review, fewer regulatory issues       |
-| FP&A Reporting Quality Assurance | 10× speed + +30% accuracy | Quicker insights for strategic decisions  |
-| Multilingual Regulatory Workflows| >€40,000 localization ROI | Consistent outputs across EU regions     |
-
-*Estimated savings based on benchmarks in SAP Finance and LLM QA automation.*
+- 📈 **FP&A Reporting QA**: Validate structure and logic of generated insights
+- ⚖️ **Legal Draft QA**: Score contractual or compliance clauses
+- 🧾 **SAP Finance**: Evaluate invoice/tax prompt accuracy before API call
+- 💬 **Customer Support QA**: Auto-evaluate chatbot accuracy (IT/EN)
+- 🧠 **Training Material Check**: Score onboarding or compliance modules
 
 ---
 
-## 🚀 Future Enhancements
+## 💰 Simulated Business Impact
 
-- [ ] Integrate **RAG (Retrieval-Augmented Generation)** for legal document grounding  
-- [ ] Add **GUI interface** for business or legal professionals  
-- [ ] Export results to dashboard or PDF report  
-- [ ] Add **multi-language scoring** (EN, IT, FR, DE)  
-- [ ] Include **semantic similarity** checks beyond keywords  
-- [ ] Build a plug-in for **ERP or compliance systems** (e.g., SAP)
+| Use Case                          | Estimated Savings     | Strategic Benefit                        |
+|----------------------------------|-----------------------|------------------------------------------|
+| VAT Compliance QA                | €15,000–25,000/year   | Reduced review time + higher accuracy    |
+| Legal Prompt Validation          | €20,000+/year         | Lower risk of regulatory error           |
+| FP&A Insight Evaluation          | 30% faster time-to-report | More confident decision-making     |
+| Cross-border Prompt QA           | €40,000+/year         | Improved consistency across languages    |
 
----
-
-## 🔗 Related Projects
-
-- [**Advanced Analytics for Invoice Payment Risk**](https://github.com/xantes88/Portfolio/tree/main/Progetti%20Machine%20Learning/Advanced%20Analytics%20for%20Invoice%20Payment%20Risk)  
-- [**Explainable AI for Banking Compliance**](https://github.com/xantes88/Portfolio/tree/main/Explainable%20AI)  
-- [**Generative AI for Industrial Safety**](https://github.com/xantes88/Portfolio/tree/main/Generative%20AI/Data%20agumentation%20for%20power%20plant%20safety)
+> Based on simulated ROI models from SAP workflows and Prompt QA best practices.
 
 ---
 
-## 🛠 Tech Stack
+## 📂 Output Files
 
-- Python 3.11  
-- LangChain + langchain-openai  
-- OpenAI API (GPT-3.5 and GPT-4)  
-- Keyword scoring logic  
-- Designed for Colab or Jupyter  
-- Modular design for business prompt engineering
+- `vat_result_[model].csv`: Detailed scoring logs
+- `chart_[model].png`: Visual keyword match comparison
+- `diagnostic_[model].json`: JSON diagnostics per iteration
+- `vat_comparison_[model].md`: Markdown report summary
 
 ---
 
-## ▶️ How to Run
+## 👤 Author & Expertise
 
-```bash
-pip install -U langchain-openai openai
-```
+Developed by **Federico Petillo** — Finance Ops & AI Specialist combining 5+ years of SAP-driven Finance Ops with real-world AI deployment for automation and compliance QA.
 
-1. Clone this repo  
-2. Run the script in Colab or Jupyter  
-3. Enter your OpenAI API key securely  
-4. Check outputs and evaluation results  
+- 📌 SAP Accounts Payable optimization
+- 📊 AI for Invoice Risk Detection & Automation
+- 🔍 Prompt Engineering for Finance/Compliance use cases
+
+🔗 [GitHub Portfolio](https://github.com/xantes88)
+
+> From SAP to Smart Ops — This project blends prompt engineering with domain expertise to create scalable AI solutions for regulatory environments.
 
 ---
 
-## 📞 Contact & Closing
+## 🔮 Future Enhancements
 
-🧠 Built on top of real-world SAP Finance & Accounts Payable experience, this project bridges traditional finance with AI-powered automation.  
-It demonstrates how Prompt Engineering and LLM evaluation can become a scalable asset in regulatory and operational domains.
+- [ ] Add **RAG** for source-grounded answers
+- [ ] Extend to **multi-language QA** (FR, DE, EN)
+- [ ] Enable **PDF/Power BI export**
+- [ ] Integrate with **ERP/Tax systems** as QA layer
+- [ ] Include **semantic validation beyond keywords**
 
-If you're looking for a professional who blends Finance, AI, and Automation to solve real business problems — let's connect.
+---
+
+## 📌 Disclaimer
+
+This is a **simulated, educational project** designed for portfolio presentation. Not intended for production use or legal compliance delivery.
+
+> Looking to bring this blend of domain expertise and AI execution into a strategic role — **AI Automation • Prompt Ops • Compliance QA** — full remote or hybrid.
+
