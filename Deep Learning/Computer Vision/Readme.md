@@ -138,13 +138,13 @@ This simulation serves as a **portfolio-ready prototype** to showcase:
 ```bash
 # Example command for inference
 python classify.py --image path/to/image.jpg
+
 🧠 Author Note
 This project was developed as part of a professional AI Engineering track focused on applied machine learning for real-world operations — with special emphasis on AI for sustainability, automation, and business impact.
 Explore the full portfolio: github.com/xantes88
 
 🎯 Next Step
-🔥 Build the Streamlit demo and deploy it for real-world testing.
-That's the final move to turn this into a portfolio flagship.
+Build the Streamlit demo and deploy it for real-world testing.
 
 
 
