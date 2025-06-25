@@ -121,7 +121,7 @@ Developed by **Federico Petillo** — Finance Ops & AI Specialist combining 5+ y
 - 📊 AI for Invoice Risk Detection & Automation
 - 🔍 Prompt Engineering for Finance/Compliance use cases
 
-🔗 [GitHub Portfolio](https://github.com/xantes88)
+
 
 > From SAP to Smart Ops — This project blends prompt engineering with domain expertise to create scalable AI solutions for regulatory environments.
 
