@@ -82,9 +82,6 @@ Libraries: json, os, basic file I/O (no external dependencies)
 
 ▶️ Getting Started
 
-bash
-Copia
-Modifica
 # Step 1: Clone the repository
 git clone https://github.com/yourusername/phone-book-manager.git
 
@@ -97,6 +94,7 @@ python phonebook.py
 ⚠️ Make sure Python 3 is installed. The app will generate Contacts.json on first use if not present.
 
 🧩 From MVP to Micro-CRM
+
 This contact manager serves as a solid Minimum Viable Product for a lightweight CRM. With minor upgrades, it can evolve into:
 
 A web-enabled app with Flask or Django
@@ -106,9 +104,6 @@ A secure, multi-user system for teams
 A mobile-compatible interface for remote use
 
 📂 Repository Structure
-bash
-Copia
-Modifica
 
 📁 phone-book-manager/
 ├── phonebook.py         # Main script (CLI logic)
