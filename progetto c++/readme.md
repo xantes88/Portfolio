@@ -67,6 +67,7 @@ g++ -o crm crm_system.cpp
 ./crm
 
 🚀 Business Use Cases
+
 💼 Sales CRM for freelancers and micro-businesses
 
 🛠️ Operational Tool for customer support teams
@@ -76,6 +77,7 @@ g++ -o crm crm_system.cpp
 📊 Prototype for early-stage CRM automation projects
 
 📈 Future Enhancements
+
 Web UI with C++ REST API (or Python frontend)
 
 SMTP email integration (reminders, follow-ups)
@@ -85,6 +87,7 @@ CSV export and Excel compatibility
 Cloud sync (e.g. Google Drive or Dropbox)
 
 🔗 Summary for Stakeholders
+
 ✔️ Functional and realistic CRM simulation
 ✔️ Strong data validation and error prevention
 ✔️ File-based persistence for data longevity
